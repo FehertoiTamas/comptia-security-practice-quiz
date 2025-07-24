@@ -1,0 +1,29 @@
+{
+  "title": "Security Controls",
+  "description": "Questions about different types of security controls and their implementation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which type of security control is designed to deter potential attackers?",
+      "options": [
+        "Detective",
+        "Preventive", 
+        "Corrective",
+        "Deterrent"
+      ],
+      "correct": 3,
+      "explanation": "Deterrent controls are designed to discourage potential attackers from attempting malicious activities by making them aware that security measures are in place."
+    },
+    {
+      "id": 2,
+      "question": "What is an example of a compensating control?",
+      "options": [
+        "Firewall",
+        "Additional monitoring when encryption fails",
+        "Antivirus software", 
+        "Access badges"
+      ],
+      "correct": 1,
+      "explanation": "Compensating controls provide alternative protection when primary controls cannot be implemented or have failed."
+    }
+  ]}
