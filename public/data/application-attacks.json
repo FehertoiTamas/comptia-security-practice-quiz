@@ -1,5 +1,276 @@
 {
   "title": "Application Attacks",
   "description": "Practice questions about application-level attacks, web vulnerabilities, and secure coding practices",
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which type of attack involves injecting malicious scripts into trusted websites?",
+      "options": ["SQL injection", "XSS", "CSRF", "Command injection"],
+      "correct": 1,
+      "explanation": "Cross-site scripting (XSS) involves injecting malicious JavaScript into web pages viewed by other users."
+    },
+    {
+      "id": 2,
+      "question": "What is the main goal of a SQL injection attack?",
+      "options": [
+        "Redirect users to malicious websites",
+        "Execute unauthorized commands on the client machine",
+        "Manipulate backend databases using unsanitized inputs",
+        "Exploit buffer overflows in the application"
+      ],
+      "correct": 2,
+      "explanation": "SQL injection aims to manipulate backend SQL queries by inserting malicious input."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following attacks relies on the user being authenticated to a web application?",
+      "options": ["CSRF", "XSS", "DoS", "SQL Injection"],
+      "correct": 0,
+      "explanation": "Cross-Site Request Forgery (CSRF) exploits the user's authenticated session to perform unauthorized actions."
+    },
+    {
+      "id": 4,
+      "question": "What is a common method to prevent SQL injection?",
+      "options": ["Using firewalls", "Input validation and parameterized queries", "Disabling JavaScript", "Enabling cookies"],
+      "correct": 1,
+      "explanation": "Parameterized queries and input validation prevent SQL commands from being manipulated by user input."
+    },
+    {
+      "id": 5,
+      "question": "Which attack tricks users into clicking something different from what they perceive?",
+      "options": ["Clickjacking", "XSS", "Buffer overflow", "Credential stuffing"],
+      "correct": 0,
+      "explanation": "Clickjacking uses transparent layers to trick users into clicking something unintended."
+    },
+    {
+      "id": 6,
+      "question": "What does input sanitization help prevent?",
+      "options": ["Denial-of-service attacks", "Brute force attacks", "Injection attacks", "Man-in-the-middle attacks"],
+      "correct": 2,
+      "explanation": "Sanitizing input removes or escapes dangerous characters to prevent injection attacks."
+    },
+    {
+      "id": 7,
+      "question": "What is the main danger of insecure deserialization?",
+      "options": ["Cross-site scripting", "Privilege escalation", "Remote code execution", "Denial-of-service"],
+      "correct": 2,
+      "explanation": "Insecure deserialization may allow attackers to manipulate objects and execute arbitrary code."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is an example of a logic bomb?",
+      "options": [
+        "A keylogger that runs on every login",
+        "A script that deletes files after a specific date",
+        "A phishing email",
+        "A fake login page"
+      ],
+      "correct": 1,
+      "explanation": "Logic bombs are malicious code triggered by specific conditions or dates."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is an example of a buffer overflow?",
+      "options": [
+        "Sending more data than a program’s memory buffer can handle",
+        "Flooding a network with traffic",
+        "Intercepting traffic between two parties",
+        "Encrypting data with an invalid key"
+      ],
+      "correct": 0,
+      "explanation": "Buffer overflow occurs when excess data overflows into adjacent memory, potentially allowing code execution."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following attacks targets file system paths to gain unauthorized access?",
+      "options": ["Buffer overflow", "Clickjacking", "Directory traversal", "SQL injection"],
+      "correct": 2,
+      "explanation": "Directory traversal manipulates path variables to access files outside the web root."
+    },
+    {
+      "id": 11,
+      "question": "Which security header helps prevent clickjacking?",
+      "options": ["Content-Security-Policy", "X-Frame-Options", "X-XSS-Protection", "Strict-Transport-Security"],
+      "correct": 1,
+      "explanation": "X-Frame-Options prevents a site from being loaded inside an iframe."
+    },
+    {
+      "id": 12,
+      "question": "Which mitigation helps prevent CSRF attacks?",
+      "options": [
+        "Content Security Policy",
+        "Same-origin policy",
+        "Using anti-CSRF tokens",
+        "Sanitizing input fields"
+      ],
+      "correct": 2,
+      "explanation": "Anti-CSRF tokens verify that a request originates from a trusted source."
+    },
+    {
+      "id": 13,
+      "question": "What type of attack exploits an application by forcing it to execute unintended commands via user input?",
+      "options": ["Command injection", "XSS", "Clickjacking", "CSRF"],
+      "correct": 0,
+      "explanation": "Command injection exploits applications that pass unsafe input to system shells."
+    },
+    {
+      "id": 14,
+      "question": "What type of vulnerability allows an attacker to overwrite a program’s instructions?",
+      "options": ["Directory traversal", "Buffer overflow", "SQL injection", "Cross-site scripting"],
+      "correct": 1,
+      "explanation": "Buffer overflow attacks can overwrite memory and alter program behavior."
+    },
+    {
+      "id": 15,
+      "question": "What is a key difference between stored and reflected XSS?",
+      "options": [
+        "Stored XSS uses cookies",
+        "Reflected XSS is persistent",
+        "Stored XSS is saved on the server",
+        "Reflected XSS uses SQL"
+      ],
+      "correct": 2,
+      "explanation": "Stored XSS is saved on the server and delivered to users, making it more persistent and dangerous."
+    },
+    {
+      "id": 16,
+      "question": "Which vulnerability allows an attacker to manipulate serialized data to perform unauthorized actions?",
+      "options": ["CSRF", "Insecure deserialization", "Buffer overflow", "Directory traversal"],
+      "correct": 1,
+      "explanation": "Insecure deserialization can lead to privilege escalation, code execution, or denial-of-service."
+    },
+    {
+      "id": 17,
+      "question": "Which type of attack involves reusing previously breached credentials?",
+      "options": ["Brute-force", "Credential stuffing", "Phishing", "Dictionary attack"],
+      "correct": 1,
+      "explanation": "Credential stuffing uses leaked usernames and passwords to attempt unauthorized access on other systems."
+    },
+    {
+      "id": 18,
+      "question": "What is the purpose of output encoding?",
+      "options": [
+        "To prevent unauthorized login attempts",
+        "To protect data in transit",
+        "To prevent malicious input from being interpreted as code",
+        "To encrypt passwords"
+      ],
+      "correct": 2,
+      "explanation": "Output encoding ensures that user input is displayed as text and not executed as code, preventing XSS."
+    },
+    {
+      "id": 19,
+      "question": "Which attack relies on users entering credentials into a fake interface?",
+      "options": ["Session hijacking", "Credential stuffing", "Phishing", "Clickjacking"],
+      "correct": 2,
+      "explanation": "Phishing tricks users into entering credentials on fake websites or interfaces."
+    },
+    {
+      "id": 20,
+      "question": "What is a sign that an application is vulnerable to command injection?",
+      "options": [
+        "The app accepts file uploads",
+        "User input is directly passed to the system shell",
+        "It uses HTTPS",
+        "Session tokens are stored in cookies"
+      ],
+      "correct": 1,
+      "explanation": "Passing user input directly to shell commands without validation can allow command injection."
+    },
+    {
+      "id": 21,
+      "question": "What is the result of failing to validate input in a web application?",
+      "options": [
+        "Secure password storage",
+        "Improved performance",
+        "Vulnerability to injection attacks",
+        "Increased encryption strength"
+      ],
+      "correct": 2,
+      "explanation": "Without input validation, the application is exposed to a range of injection-based attacks."
+    },
+    {
+      "id": 22,
+      "question": "Which type of attack involves sending excessive traffic to crash a web app?",
+      "options": ["CSRF", "XSS", "DoS", "SQL Injection"],
+      "correct": 2,
+      "explanation": "Denial-of-service (DoS) attacks aim to make applications unavailable by overloading them."
+    },
+    {
+      "id": 23,
+      "question": "Which technique helps prevent buffer overflow vulnerabilities?",
+      "options": ["Client-side validation", "Using prepared statements", "Bounds checking", "Session management"],
+      "correct": 2,
+      "explanation": "Bounds checking ensures that data does not exceed allocated memory space, preventing overflow."
+    },
+    {
+      "id": 24,
+      "question": "Which of the following is an example of a reflected XSS attack?",
+      "options": [
+        "Malicious JavaScript is stored in a comment section",
+        "Malicious script is embedded in a URL and executed immediately",
+        "An attacker injects SQL through a login form",
+        "A script executes from a hidden iframe"
+      ],
+      "correct": 1,
+      "explanation": "Reflected XSS sends the payload via a URL and executes it when the link is clicked."
+    },
+    {
+      "id": 25,
+      "question": "Which attack manipulates path variables to access unauthorized files?",
+      "options": ["Command injection", "Directory traversal", "SQL injection", "XSS"],
+      "correct": 1,
+      "explanation": "Directory traversal uses input like '../' to escape the web root and access restricted files."
+    },
+    {
+      "id": 26,
+      "question": "What is a key defense against cross-site scripting?",
+      "options": [
+        "Disabling cookies",
+        "Sanitizing user input and encoding output",
+        "Using default credentials",
+        "Enabling JavaScript logging"
+      ],
+      "correct": 1,
+      "explanation": "Sanitizing and encoding ensures malicious scripts are not executed in the browser."
+    },
+    {
+      "id": 27,
+      "question": "Which term describes code that is triggered only when certain conditions are met?",
+      "options": ["Virus", "Logic bomb", "Worm", "Spyware"],
+      "correct": 1,
+      "explanation": "A logic bomb executes its payload only when specific conditions are met."
+    },
+    {
+      "id": 28,
+      "question": "Which control helps mitigate the risk of insecure deserialization?",
+      "options": [
+        "Validating JWTs",
+        "Implementing secure coding practices and deserialization filters",
+        "Using anti-virus",
+        "Disabling JavaScript"
+      ],
+      "correct": 1,
+      "explanation": "Secure coding and strict deserialization processes help prevent exploitation of serialized data."
+    },
+    {
+      "id": 29,
+      "question": "Which of the following best describes a zero-day vulnerability?",
+      "options": [
+        "A publicly known vulnerability with a patch available",
+        "An outdated antivirus signature",
+        "An unknown vulnerability exploited before a patch is available",
+        "A vulnerability that only affects IoT devices"
+      ],
+      "correct": 2,
+      "explanation": "Zero-day vulnerabilities are exploited before the vendor releases a fix."
+    },
+    {
+      "id": 30,
+      "question": "Which application vulnerability allows attackers to inject operating system commands?",
+      "options": ["SQL injection", "XSS", "Command injection", "CSRF"],
+      "correct": 2,
+      "explanation": "Command injection occurs when untrusted input is passed to the system shell."
+    }
+  ]
 } 
