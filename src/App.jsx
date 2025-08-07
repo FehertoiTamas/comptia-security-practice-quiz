@@ -79,6 +79,7 @@ export default function SecurityQuizApp() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [selectedAnswers, setSelectedAnswers] = useState(new Set());
   const [showResults, setShowResults] = useState(false);
   const [quizStartTime, setQuizStartTime] = useState(null);
   const [quizEndTime, setQuizEndTime] = useState(null);
@@ -144,6 +145,7 @@ export default function SecurityQuizApp() {
         setCurrentQuestion(0);
         setUserAnswers([]);
         setSelectedAnswer(null);
+        setSelectedAnswers(new Set());
         setShowResults(false);
         setQuizStartTime(new Date());
       } else {
@@ -160,14 +162,37 @@ export default function SecurityQuizApp() {
   };
 
   const handleAnswerSelect = (answerIndex) => {
-    setSelectedAnswer(answerIndex);
+    const currentQuestionData = selectedTopic.questions[currentQuestion];
+    const isMultipleChoice = Array.isArray(currentQuestionData.correct);
+
+    if (isMultipleChoice) {
+      // Handle multiple choice question
+      const newSelectedAnswers = new Set(selectedAnswers);
+      if (newSelectedAnswers.has(answerIndex)) {
+        newSelectedAnswers.delete(answerIndex);
+      } else {
+        newSelectedAnswers.add(answerIndex);
+      }
+      setSelectedAnswers(newSelectedAnswers);
+    } else {
+      // Handle single choice question
+      setSelectedAnswer(answerIndex);
+    }
   };
 
   const nextQuestion = () => {
+    const currentQuestionData = selectedTopic.questions[currentQuestion];
+    const isMultipleChoice = Array.isArray(currentQuestionData.correct);
+
     const newAnswers = [...userAnswers];
-    newAnswers[currentQuestion] = selectedAnswer;
+    if (isMultipleChoice) {
+      newAnswers[currentQuestion] = Array.from(selectedAnswers);
+    } else {
+      newAnswers[currentQuestion] = selectedAnswer;
+    }
     setUserAnswers(newAnswers);
     setSelectedAnswer(null);
+    setSelectedAnswers(new Set());
 
     const questions = selectedTopic.questions;
     if (currentQuestion + 1 < questions.length) {
@@ -182,6 +207,7 @@ export default function SecurityQuizApp() {
     setCurrentQuestion(0);
     setUserAnswers([]);
     setSelectedAnswer(null);
+    setSelectedAnswers(new Set());
     setShowResults(false);
     setQuizStartTime(new Date());
   };
@@ -202,7 +228,51 @@ export default function SecurityQuizApp() {
   const calculateScore = () => {
     const questions = selectedTopic.questions;
     const correctAnswers = userAnswers.reduce((count, answer, index) => {
-      return answer === questions[index].correct ? count + 1 : count;
+      const question = questions[index];
+      const isMultipleChoice = Array.isArray(question.correct);
+
+      console.log(`Question ${index + 1}:`, {
+        userAnswer: answer,
+        correctAnswer: question.correct,
+        isMultipleChoice,
+        question: question.question,
+      });
+
+      if (isMultipleChoice) {
+        // For multiple choice questions, check if all correct answers are selected and no incorrect ones
+        const userSelected = new Set(answer || []);
+        const correctSet = new Set(question.correct);
+
+        console.log("Multiple choice:", {
+          userSelected: Array.from(userSelected),
+          correctSet: Array.from(correctSet),
+          userSize: userSelected.size,
+          correctSize: correctSet.size,
+        });
+
+        // Check if user selected exactly the correct answers
+        if (userSelected.size === correctSet.size) {
+          for (const correctIndex of correctSet) {
+            if (!userSelected.has(correctIndex)) {
+              console.log("Missing correct answer:", correctIndex);
+              return count; // Missing a correct answer
+            }
+          }
+          console.log("All correct answers selected");
+          return count + 1; // All correct answers selected
+        }
+        console.log("Wrong number of answers or incorrect selection");
+        return count; // Wrong number of answers or incorrect selection
+      } else {
+        // For single choice questions
+        const isCorrect = answer === question.correct;
+        console.log("Single choice:", {
+          answer,
+          correct: question.correct,
+          isCorrect,
+        });
+        return isCorrect ? count + 1 : count;
+      }
     }, 0);
     return Math.round((correctAnswers / questions.length) * 100);
   };
@@ -215,6 +285,28 @@ export default function SecurityQuizApp() {
       return `${minutes}:${seconds.toString().padStart(2, "0")}`;
     }
     return "0:00";
+  };
+
+  const isAnswerSelected = (answerIndex) => {
+    const currentQuestionData = selectedTopic.questions[currentQuestion];
+    const isMultipleChoice = Array.isArray(currentQuestionData.correct);
+
+    if (isMultipleChoice) {
+      return selectedAnswers.has(answerIndex);
+    } else {
+      return selectedAnswer === answerIndex;
+    }
+  };
+
+  const canProceed = () => {
+    const currentQuestionData = selectedTopic.questions[currentQuestion];
+    const isMultipleChoice = Array.isArray(currentQuestionData.correct);
+
+    if (isMultipleChoice) {
+      return selectedAnswers.size > 0;
+    } else {
+      return selectedAnswer !== null;
+    }
   };
 
   if (loading) {
@@ -394,11 +486,27 @@ export default function SecurityQuizApp() {
               </div>
               <div className="stat-card correct">
                 <div className="stat-value">
-                  {
-                    userAnswers.filter(
-                      (answer, index) => answer === questions[index].correct
-                    ).length
-                  }
+                  {userAnswers.reduce((count, answer, index) => {
+                    const question = questions[index];
+                    const isMultipleChoice = Array.isArray(question.correct);
+
+                    if (isMultipleChoice) {
+                      const userSelected = new Set(answer || []);
+                      const correctSet = new Set(question.correct);
+
+                      if (userSelected.size === correctSet.size) {
+                        for (const correctIndex of correctSet) {
+                          if (!userSelected.has(correctIndex)) {
+                            return count;
+                          }
+                        }
+                        return count + 1;
+                      }
+                      return count;
+                    } else {
+                      return answer === question.correct ? count + 1 : count;
+                    }
+                  }, 0)}
                   /{questions.length}
                 </div>
                 <div className="stat-label">Correct Answers</div>
@@ -409,7 +517,25 @@ export default function SecurityQuizApp() {
               <h4 className="review-title">Question Review:</h4>
               {questions.map((question, index) => {
                 const userAnswer = userAnswers[index];
-                const isCorrect = userAnswer === question.correct;
+                const isMultipleChoice = Array.isArray(question.correct);
+
+                let isCorrect = false;
+                if (isMultipleChoice) {
+                  const userSelected = new Set(userAnswer || []);
+                  const correctSet = new Set(question.correct);
+
+                  if (userSelected.size === correctSet.size) {
+                    isCorrect = true;
+                    for (const correctIndex of correctSet) {
+                      if (!userSelected.has(correctIndex)) {
+                        isCorrect = false;
+                        break;
+                      }
+                    }
+                  }
+                } else {
+                  isCorrect = userAnswer === question.correct;
+                }
 
                 return (
                   <div key={index} className="review-item">
@@ -422,22 +548,37 @@ export default function SecurityQuizApp() {
                       <div className="review-content">
                         <p className="review-question">
                           {index + 1}. {question.question}
+                          {isMultipleChoice && (
+                            <span className="question-type-indicator">
+                              (Select all that apply)
+                            </span>
+                          )}
                         </p>
                         <div className="options-grid">
-                          {question.options.map((option, optIndex) => (
-                            <div
-                              key={optIndex}
-                              className={`option-review ${
-                                optIndex === question.correct
-                                  ? "correct-option"
-                                  : optIndex === userAnswer && !isCorrect
-                                  ? "incorrect-option"
-                                  : "neutral-option"
-                              }`}
-                            >
-                              {option}
-                            </div>
-                          ))}
+                          {question.options.map((option, optIndex) => {
+                            const isCorrectOption = isMultipleChoice
+                              ? question.correct.includes(optIndex)
+                              : optIndex === question.correct;
+                            const isUserSelected = isMultipleChoice
+                              ? (userAnswer || []).includes(optIndex)
+                              : userAnswer === optIndex;
+
+                            let optionClass = "neutral-option";
+                            if (isCorrectOption) {
+                              optionClass = "correct-option";
+                            } else if (isUserSelected && !isCorrect) {
+                              optionClass = "incorrect-option";
+                            }
+
+                            return (
+                              <div
+                                key={optIndex}
+                                className={`option-review ${optionClass}`}
+                              >
+                                {option}
+                              </div>
+                            );
+                          })}
                         </div>
                         <p className="explanation">{question.explanation}</p>
                       </div>
@@ -489,7 +630,14 @@ export default function SecurityQuizApp() {
           </div>
 
           <div className="question-section">
-            <h3 className="question-text">{currentQ.question}</h3>
+            <h3 className="question-text">
+              {currentQ.question}
+              {Array.isArray(currentQ.correct) && (
+                <span className="question-type-indicator">
+                  (Select all that apply)
+                </span>
+              )}
+            </h3>
 
             <div className="options-container">
               {currentQ.options.map((option, index) => (
@@ -497,7 +645,7 @@ export default function SecurityQuizApp() {
                   key={index}
                   onClick={() => handleAnswerSelect(index)}
                   className={`option-btn ${
-                    selectedAnswer === index ? "selected" : ""
+                    isAnswerSelected(index) ? "selected" : ""
                   }`}
                 >
                   <span className="option-letter">
@@ -512,10 +660,8 @@ export default function SecurityQuizApp() {
           <div className="quiz-actions">
             <button
               onClick={nextQuestion}
-              disabled={selectedAnswer === null}
-              className={`next-btn ${
-                selectedAnswer !== null ? "enabled" : "disabled"
-              }`}
+              disabled={!canProceed()}
+              className={`next-btn ${canProceed() ? "enabled" : "disabled"}`}
             >
               {currentQuestion + 1 === questions.length
                 ? "Finish Quiz"

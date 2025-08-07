@@ -295,6 +295,15 @@
   line-height: 1.6;
 }
 
+.question-type-indicator {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #fbbf24;
+  font-weight: 500;
+  margin-left: 8px;
+  font-style: italic;
+}
+
 .options-container {
   display: grid;
   gap: 12px;

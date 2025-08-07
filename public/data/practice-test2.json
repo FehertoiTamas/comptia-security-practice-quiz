@@ -48,6 +48,254 @@
       ],
       "correct": [0, 4],
       "explanation": ""
+    },
+    {
+      "id": 5,
+      "question": "In the Zero Trust security architecture, the Policy Enforcement Point (PEP) is a Data Plane component that enforces the security policies defined at the Control Plane by the Policy Decision Point (PDP).",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "id": 6,
+      "question": " An access control vestibule (a.k.a. mantrap) is a physical security access control system used to prevent unauthorized users from gaining access to restricted areas. An example mantrap could be a two-door entrance point connected to a guard station wherein a person entering from the outside remains locked inside until he/she provides authentication token required to unlock the inner door.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "id": 7,
+      "question": "Which of the following statements about honeypots are true? (Select 2 answers)",
+      "options": [
+        "Honeypots are always part of a honeynet",
+        "Honeypots mimic real systems to attract cyber attackers",
+        "Honeypots are used to detect and respond to threatHoneypots are a type of anti-malware solution",
+        "Honeypots contain apparent vulnerabilities that are closely monitored by a security team",
+        "Honeypots are used to launch attacks on cyber attackers"
+      ],
+      "correct": [1, 3],
+      "explanation": ""
+    },
+    {
+      "id": 8,
+      "question": "What is a honeynet in the context of cybersecurity?",
+      "options": [
+        "A network of IDSs",
+        "A network of honeypots",
+        "A network of infected hosts",
+        "A network of IPSs"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "id": 9,
+      "question": "Which of the answers listed below refers to a honeynet example?",
+      "options": [
+        "A network of fake websites",
+        "A network of fake servers",
+        "A network of fake databases",
+        "A network of fake file shares",
+        "All of the above"
+      ],
+      "correct": 4,
+      "explanation": ""
+    },
+    {
+      "id": 10,
+      "question": "A honeyfile can be any type of file (e.g., a document, email message, image, or video file) containing real user data intentionally placed within a network or system to attract potential attackers or unauthorized users.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "id": 11,
+      "question": "A honeyfile can be used for:",
+      "options": [
+        "Attracting cyber attackers",
+        "Triggering alerts when accessed",
+        "Monitoring network activity",
+        "All of the above"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "id": 12,
+      "question": "What is a honeytoken?",
+      "options": [
+        "A decoy file that is designed to attract attackers",
+        "A unique identifier assigned to a honeyfile",
+        "A decoy system that is designed to lure potential attackers",
+        "A unique identifier that is designed to track attackers"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "id": 13,
+      "question": "Which of the following should not be used as honeytokens? (Select all that apply)",
+      "options": [
+        "Active user account credentials",
+        "Database entries mimicking real data",
+        "Actual URLs to live websites or resources",
+        "Dummy server logs with enticing information",
+        "Fake identifiers, including usernames, passwords, email addresses, and IP addresses"
+      ],
+      "correct": [0, 2],
+      "explanation": ""
+    },
+    {
+      "id": 14,
+      "question": "A process used by organizations to assess and evaluate the potential impact of disruptive incidents or disasters on their critical business functions and operations is referred to as:",
+      "options": [
+        "BPA",
+        "BIA",
+        "SLE",
+        "BCP"
+      ],
+      "correct": 1,
+      "explanation": "Business Impact Analysis (BIA)"
+    },
+    {
+      "id": 15,
+      "question": "A hierarchical system for the creation, management, storage, distribution, and revocation of digital certificates is known as:",
+      "options": [
+        "PKI",
+        "RA",
+        "PKCS",
+        "CA"
+      ],
+      "correct": 0,
+      "explanation": "Public Key Infrastructure"
+    },
+    {
+      "id": 16,
+      "question": "Which of the answers listed below best describes the characteristics of a public-private key pair?",
+      "options": [
+        "Both keys are examples of a symmetrical key",
+        "Two keys that are identical",
+        "A pair of keys where one is used for encryption and the other for decryption",
+        "Both keys are examples of a shared key"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "id": 17,
+      "question": "What is the typical use of a public key?",
+      "options": [
+        "Data encryption",
+        "Data decryption",
+        "User/device authentication",
+        "All of the above"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "id": 18,
+      "question": "Key escrow is a cryptographic technique that enables storing copies of encryption keys with a trusted third party. A Recovery Agent (RA) is a trusted third party (an individual, entity, or system) who is authorized to assist in the retrieval of encryption keys and data on behalf of the data owner. Key escrow and RA are both used to ensure that encrypted data can be decrypted even if the data owner loses access to their encryption key. Since key escrow and RAs are both components of a single security solution, the only way to implement key escrow systems is with the use of RAs.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "id": 19,
+      "question": "Which of the following answers refers to a data storage device equipped with hardware-level encryption functionality?",
+      "options": [
+        "HSM",
+        "TPM",
+        "EFS",
+        "SED"
+      ],
+      "correct": 3,
+      "explanation": "A Self-Encrypting Drive (SED) is a data storage device (e.g., an SSD or HDD) that has hardware-level encryption built in. The encryption and decryption of data happen automatically and transparently within the drive, often using AES encryption."
+    },
+    {
+      "id": 20,
+      "question": "Which of the answers listed below refers to software technology designed to provide confidentiality for an entire data storage device?",
+      "options": [
+        "TPM",
+        "FDE",
+        "EFS",
+        "HSM"
+      ],
+      "correct": 1,
+      "explanation": "Full Disk Encryption (FDE) is a software (or hardware-assisted) technology that encrypts the entire contents of a storage device"
+    },
+    {
+      "id": 21,
+      "question": " An MS Windows component that enables encryption of individual files is called:",
+      "options": [
+        "SED",
+        "EFS",
+        "BitLocker",
+        "FDE"
+      ],
+      "correct": 1,
+      "explanation": "EFS is a Windows component that enables encryption of individual files"
+    },
+    {
+      "id": 22,
+      "question": "Which of the following software application tools are specifically designed for implementing encryption algorithms to secure data communication and storage? (Select 2 answers)",
+      "options": [
+        "VPN",
+        "GPG",
+        "SSH",
+        "IPSec",
+        "PGP"
+      ],
+      "correct": [1, 4],
+      "explanation": "Both GPG (GNU Privacy Guard) and PGP (Pretty Good Privacy) are software tools specifically designed to implement encryption algorithms"
+    },
+    {
+      "id": 23,
+      "question": "What is the name of a network protocol that secures web traffic via SSL/TLS encryption?",
+      "options": [
+        "SFTP",
+        "HTTPS",
+        "FTPS",
+        "SNMP"
+      ],
+      "correct": 1,
+      "explanation": "HTTPS is the network protocol that secures web traffic using SSL/TLS encryption. It is the secure version of HTTP"
+    },
+    {
+      "id": 24,
+      "question": "Which of the answers listed below refers to a deprecated TLS-based method for secure transmission of email messages?",
+      "options": [
+        "S/MIME",
+        "STARTTLS",
+        "DKIM",
+        "SMTPS"
+      ],
+      "correct": 3,
+      "explanation": "SMTPS (Simple Mail Transfer Protocol Secure) refers to a deprecated method of sending email over a dedicated TLS/SSL port (usually port 465). It was originally used to wrap SMTP communication in SSL/TLS from the start of the connection."
+    },
+    {
+      "id": 25,
+      "question": "Which of the following answers refers to an obsolete protocol used for secure data transfer over the web?",
+      "options": [
+        "SMTPS",
+        "SRTP",
+        "SHTTP",
+        "S/MIME"
+      ],
+      "correct": 2,
+      "explanation": "SHTTP (Secure Hypertext Transfer Protocol) is an obsolete protocol that was once used for securing data transfer over the web."
     }
   ]
 }
