@@ -1,0 +1,40 @@
+{
+  "title": "Practice Test 2",
+  "description": "Practice questions for the second practice test",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following terms describes the process of identifying differences between an organization's current security posture and its desired security posture?",
+      "options": [
+        "Tabletop exercise",
+        "Gap analysis",
+        "Security awareness training",
+        "Risk assessment"
+      ],
+      "correct": 2,
+      "explanation": "Gap analysis: This is the correct term for the process of identifying differences between an organization's current security posture and its desired security posture. It helps organizations understand what needs to be improved or implemented to reach their security goals."
+    },
+    {
+      "id": 2,
+      "question": "The term Zero Trust security refers to a cybersecurity model that eliminates implicit trust from networks and requires all users and devices to be continuously verified before being granted access to resources. The implementation of the Zero Trust security involves two distinct components: a Data Plane, responsible for defining and managing security policies, and a Control Plane, responsible for enforcing the security policies established by the Data Plane.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 2,
+      "explanation": "The statement is incorrect because it reverses the roles of the Data Plane and the Control Plane in the context of Zero Trust security (and networking in general)."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following terms describes the process of identifying differences between an organization's current security posture and its desired security posture?",
+      "options": [
+        "Tabletop exercise",
+        "Gap analysis",
+        "Security awareness training",
+        "Risk assessment"
+      ],
+      "correct": 2,
+      "explanation": "Gap analysis: This is the correct term for the process of identifying differences between an organization's current security posture and its desired security posture. It helps organizations understand what needs to be improved or implemented to reach their security goals."
+    }
+  ]
+}

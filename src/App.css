@@ -80,6 +80,89 @@
   color: white;
 }
 
+/* Menu Grid Styles */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.menu-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.menu-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.menu-icon {
+  width: 48px;
+  height: 48px;
+  color: #93c5fd;
+  flex-shrink: 0;
+}
+
+.menu-info {
+  flex: 1;
+}
+
+.menu-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.menu-description {
+  font-size: 0.875rem;
+  color: #bfdbfe;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.menu-status {
+  font-size: 0.75rem;
+  color: #93c5fd;
+  font-weight: 500;
+}
+
+/* Back Button Styles */
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #bfdbfe;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+  margin-bottom: 24px;
+}
+
+.back-btn:hover {
+  color: white;
+}
+
+.back-icon {
+  width: 20px;
+  height: 20px;
+}
+
 .topics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -468,6 +551,10 @@
 
   .main-title {
     font-size: 2rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
   }
 
   .topics-grid {

@@ -6,6 +6,8 @@ import {
   CheckCircle,
   XCircle,
   Award,
+  BookOpen,
+  FileText,
 } from "lucide-react";
 import "./App.css";
 
@@ -42,6 +44,8 @@ const topics = [
   { id: "agreement-types", title: "Agreement Types" },
   { id: "penetration-testing", title: "Penetration Testing" },
 ];
+
+const practiceTests = [{ id: "practice-test2", title: "Practice Test 2" }];
 
 // Function to load topic data from JSON files
 const loadTopicData = async (topicId) => {
@@ -80,27 +84,53 @@ export default function SecurityQuizApp() {
   const [quizEndTime, setQuizEndTime] = useState(null);
   const [loading, setLoading] = useState(false);
   const [availableTopics, setAvailableTopics] = useState(new Set());
+  const [availablePracticeTests, setAvailablePracticeTests] = useState(
+    new Set()
+  );
 
-  // Check which topics have JSON files available
+  // Check which topics and practice tests have JSON files available
   useEffect(() => {
     const checkAvailability = async () => {
-      const available = new Set();
+      const availableTopicsSet = new Set();
+      const availablePracticeTestsSet = new Set();
+
+      // Check topics
       for (const topic of topics) {
         const isAvailable = await checkTopicAvailability(topic.id);
         if (isAvailable) {
-          available.add(topic.id);
+          availableTopicsSet.add(topic.id);
         }
       }
-      setAvailableTopics(available);
+
+      // Check practice tests
+      for (const test of practiceTests) {
+        const isAvailable = await checkTopicAvailability(test.id);
+        if (isAvailable) {
+          availablePracticeTestsSet.add(test.id);
+        }
+      }
+
+      setAvailableTopics(availableTopicsSet);
+      setAvailablePracticeTests(availablePracticeTestsSet);
     };
 
     checkAvailability();
   }, []);
 
   const startQuiz = async (topicId) => {
-    if (!availableTopics.has(topicId)) {
+    const isTopic = topics.some((t) => t.id === topicId);
+    const isPracticeTest = practiceTests.some((t) => t.id === topicId);
+
+    if (isTopic && !availableTopics.has(topicId)) {
       alert(
         `Questions for this topic are not available yet. Please add the ${topicId}.json file to the /public/data/ folder.`
+      );
+      return;
+    }
+
+    if (isPracticeTest && !availablePracticeTests.has(topicId)) {
+      alert(
+        `Practice test is not available yet. Please add the ${topicId}.json file to the /public/data/ folder.`
       );
       return;
     }
@@ -117,7 +147,7 @@ export default function SecurityQuizApp() {
         setShowResults(false);
         setQuizStartTime(new Date());
       } else {
-        alert("No questions found in this topic file.");
+        alert("No questions found in this file.");
       }
     } catch (error) {
       alert(
@@ -161,6 +191,14 @@ export default function SecurityQuizApp() {
     setSelectedTopic(null);
   };
 
+  const navigateToTopics = () => {
+    setCurrentView("topics");
+  };
+
+  const navigateToPracticeTests = () => {
+    setCurrentView("practice-tests");
+  };
+
   const calculateScore = () => {
     const questions = selectedTopic.questions;
     const correctAnswers = userAnswers.reduce((count, answer, index) => {
@@ -199,8 +237,65 @@ export default function SecurityQuizApp() {
             <p className="subtitle">Practice Quiz Application</p>
             <div className="stats-badge">
               <Award className="icon" />
-              <span>{availableTopics.size} Topics Available</span>
+              <span>
+                {availableTopics.size + availablePracticeTests.size} Items
+                Available
+              </span>
             </div>
+          </div>
+
+          <div className="menu-grid">
+            <div onClick={navigateToTopics} className="menu-card topics-card">
+              <div className="menu-content">
+                <BookOpen className="menu-icon" />
+                <div className="menu-info">
+                  <h3 className="menu-title">Topics</h3>
+                  <p className="menu-description">
+                    Practice specific security topics and concepts
+                  </p>
+                  <p className="menu-status">
+                    {availableTopics.size} topics available
+                  </p>
+                </div>
+                <ChevronRight className="arrow-icon" />
+              </div>
+            </div>
+
+            <div
+              onClick={navigateToPracticeTests}
+              className="menu-card practice-card"
+            >
+              <div className="menu-content">
+                <FileText className="menu-icon" />
+                <div className="menu-info">
+                  <h3 className="menu-title">Practice Tests</h3>
+                  <p className="menu-description">
+                    Full-length practice exams to test your knowledge
+                  </p>
+                  <p className="menu-status">
+                    {availablePracticeTests.size} tests available
+                  </p>
+                </div>
+                <ChevronRight className="arrow-icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (currentView === "topics") {
+    return (
+      <div className="app">
+        <div className="container">
+          <div className="header">
+            <button onClick={goHome} className="back-btn">
+              <Home className="back-icon" />
+              Back to Menu
+            </button>
+            <h1 className="main-title">Security Topics</h1>
+            <p className="subtitle">Choose a topic to practice</p>
           </div>
 
           <div className="topics-grid">
@@ -217,6 +312,47 @@ export default function SecurityQuizApp() {
                     <h3 className="topic-title">{topic.title}</h3>
                     <p className="topic-status">
                       {availableTopics.has(topic.id)
+                        ? "Available"
+                        : "JSON file missing"}
+                    </p>
+                  </div>
+                  <ChevronRight className="arrow-icon" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (currentView === "practice-tests") {
+    return (
+      <div className="app">
+        <div className="container">
+          <div className="header">
+            <button onClick={goHome} className="back-btn">
+              <Home className="back-icon" />
+              Back to Menu
+            </button>
+            <h1 className="main-title">Practice Tests</h1>
+            <p className="subtitle">Full-length practice exams</p>
+          </div>
+
+          <div className="topics-grid">
+            {practiceTests.map((test) => (
+              <div
+                key={test.id}
+                onClick={() => startQuiz(test.id)}
+                className={`topic-card ${
+                  !availablePracticeTests.has(test.id) ? "disabled" : ""
+                }`}
+              >
+                <div className="topic-content">
+                  <div className="topic-info">
+                    <h3 className="topic-title">{test.title}</h3>
+                    <p className="topic-status">
+                      {availablePracticeTests.has(test.id)
                         ? "Available"
                         : "JSON file missing"}
                     </p>
@@ -318,7 +454,7 @@ export default function SecurityQuizApp() {
               </button>
               <button onClick={goHome} className="btn btn-secondary">
                 <Home className="btn-icon" />
-                Back to Topics
+                Back to Menu
               </button>
             </div>
           </div>
