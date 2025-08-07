@@ -11,7 +11,7 @@
         "Security awareness training",
         "Risk assessment"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Gap analysis: This is the correct term for the process of identifying differences between an organization's current security posture and its desired security posture. It helps organizations understand what needs to be improved or implemented to reach their security goals."
     },
     {
@@ -21,20 +21,33 @@
         "True",
         "False"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "The statement is incorrect because it reverses the roles of the Data Plane and the Control Plane in the context of Zero Trust security (and networking in general)."
     },
     {
       "id": 3,
-      "question": "Which of the following terms describes the process of identifying differences between an organization's current security posture and its desired security posture?",
+      "question": "Which of the answers listed below refers to a Zero Trust Control Plane security approach that takes into account user identity, device security, network conditions, and other contextual information to enable dynamic access decisions?",
       "options": [
-        "Tabletop exercise",
-        "Gap analysis",
-        "Security awareness training",
-        "Risk assessment"
+        "Implicit trust",
+        "Monitoring and logging",
+        "Adaptive identity",
+        "Micro-segmentation"
       ],
       "correct": 2,
-      "explanation": "Gap analysis: This is the correct term for the process of identifying differences between an organization's current security posture and its desired security posture. It helps organizations understand what needs to be improved or implemented to reach their security goals."
+      "explanation": "The Zero Trust Control Plane is the central system or layer in a Zero Trust architecture that evaluates access requests in real time by considering multiple contextual signals—such as user identity, device posture, location, behavior, and more—to make dynamic, risk-based access decisions."
+    },
+    {
+      "id": 4,
+      "question": "What are the key components of the Zero Trust Control Plane's Policy Decision Point (PDP)? (Select 2 answers)",
+      "options": [
+        "Policy Engine (PE)",
+        "Monitoring and logging",
+        "Policy Enforcement Point (PEP)",
+        "Micro-segmentation",
+        "Policy Administrator (PA)"
+      ],
+      "correct": [0, 4],
+      "explanation": ""
     }
   ]
 }
