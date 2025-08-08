@@ -1,0 +1,326 @@
+{
+  "tittle": "Practice Test 1",
+  "description": "This is a practice test 1 for CompTIA Security+ certification.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following answers can be used to describe technical security controls? (Select 3 answers)",
+      "options": [
+        "Focused on protecting material assets",
+        "Sometimes called logical security controls",
+        "Executed by computer systems (instead of people)",
+        "Also known as administrative controls",
+        "Implemented with technology",
+        "Primarily implemented and executed by people (as opposed to computer systems)"
+      ],
+      "correct": [ 1, 2, 4],
+      "explanation": "Technical controls (also called logical controls) are security measures that are implemented and enforced using technology rather than human actions. Examples include firewalls, encryption, access control mechanisms, intrusion detection systems, etc."
+    },
+    {
+      "id": 2,
+      "question": "Which of the answers listed below refer to examples of technical security controls? (Select 3 answers)",
+      "options": [
+        "Security audits",
+        "Encryption",
+        "Organizational security policy",
+        "IDSs",
+        "Configuration management",
+        "Firewalls"
+      ],
+      "correct": [ 1, 3, 5 ],
+      "explanation": ""
+    },
+    {
+      "id": 3,
+      "question": "Which of the following answers refer to the characteristic features of managerial security controls? (Select 3 answers)",
+      "options": [
+        "Also known as administrative controls",
+        "Sometimes referred to as logical security controls",
+        "Focused on reducing the risk of security incidents",
+        "Executed by computer systems (instead of people)",
+        "Documented in written policies",
+        "Focused on protecting material assets"
+      ],
+      "correct": [ 0, 2, 4],
+      "explanation": ""
+    },
+    {
+      "id": 4,
+      "question": "Examples of managerial security controls include: (Select 3 answers)",
+      "options": [
+        "Configuration management",
+        "Data backups",
+        "Organizational security policy",
+        "Risk assessments",
+        "Security awareness training"
+      ],
+      "correct": [ 2, 3, 4 ],
+      "explanation": ""
+    },
+    {
+      "id": 5,
+      "question": "Which of the answers listed below can be used to describe operational security controls (Select 3 answers)",
+      "options": [
+        "Also known as administrative controls",
+        "Focused on the day-to-day procedures of an organization",
+        "Executed by computer systems (instead of people)",
+        "Used to ensure that the equipment continues to work as specified",
+        "Focused on managing risk",
+        "Primarily implemented and executed by people (as opposed to computer systems)"
+      ],
+      "correct": [ 1, 3, 5 ],
+      "explanation": ""
+    },
+    {
+      "id": 6,
+      "question": "Which of the following examples fall into the category of operational security controls? (Select 3 answers)",
+      "options": [
+        "Risk assessments",
+        "Configuration management",
+        "System backups",
+        "Authentication protocols",
+        "Patch management"
+      ],
+      "correct": [ 1, 2, 4 ],
+      "explanation": ""
+    },
+    {
+      "id": 7,
+      "question": "Which of the answers listed below refers to security controls designed to deter, detect, and prevent unauthorized access, theft, damage, or destruction of material assets?",
+      "options": [
+        "Managerial security controls",
+        "Physical security controls",
+        "Technical security controls",
+        "Operational security controls"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "id": 8,
+      "question": "Which of the following examples do not fall into the category of physical security controls? (Select 3 answers)",
+      "options": [
+        "Lighting",
+        "Access control vestibules",
+        "Data backups",
+        "Fencing/Bollards/Barricades",
+        "Firewalls",
+        "Security guards",
+        "Asset management"
+      ],
+      "correct": [ 2, 4, 6],
+      "explanation": ""
+    },
+    {
+      "id": 9,
+      "question": "What are the examples of preventive security controls? (Select 3 answers)",
+      "options": [
+        "Encryption",
+        "IDS",
+        "Sensors",
+        "Firewalls",
+        "Warning signs",
+        "AV software"
+      ],
+      "correct": [ 0, 3, 5 ],
+      "explanation": ""
+    },
+    {
+      "id": 10,
+      "question": "Examples of deterrent security controls include: (Select 3 answers)",
+      "options": [
+        "Warning signs",
+        "Sensors",
+        "Lighting",
+        "Video surveillance",
+        "Security audits",
+        "Fencing/Bollards"
+      ],
+      "correct": [ 0, 2, 5 ],
+      "explanation": ""
+    },
+    {
+      "id": 11,
+      "question": "Which of the answers listed below refer(s) to detective security control(s)? (Select all that apply)",
+      "options": [
+        "Lighting",
+        "Log monitoring",
+        "Sandboxing",
+        "Security audits",
+        "CCTV",
+        "IDS",
+        "Vulnerability scanning"
+      ],
+      "correct": [ 1, 3, 4, 5, 6 ],
+      "explanation": ""
+    },
+    {
+      "id": 12,
+      "question": "Which of the following answers refer(s) to corrective security control(s)? (Select all that apply)",
+      "options": [
+        "Recovering data from backup copies",
+        "Applying software updates and patches to fix vulnerabilities",
+        "Developing and implementing IRPs to respond to and recover from security incidents",
+        "Regularly reviewing logs for anomalies or patterns indicative of attacks",
+        "Activating and executing DRPs to restore operations after a major incident"
+      ],
+      "correct": [ 0, 1, 2, 4 ],
+      "explanation": ""
+    },
+    {
+      "id": 13,
+      "question": "Which of the answers listed below refer(s) to compensating security control(s)? (Select all that apply)",
+      "options": [
+        "Backup power systems",
+        "Video surveillance",
+        "MFA",
+        "Application sandboxing",
+        "Network segmentation"
+      ],
+      "correct": [ 0, 2, 3, 4],
+      "explanation": "A compensating control is a security measure that replaces or supplements another control when the original control is not feasible or available in the given environment."
+    },
+    {
+      "id": 14,
+      "question": "The term -Directive security- controls refers to the category of security controls that are implemented through policies and procedures.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Directive security controls are implemented through policies, procedures, guidelines, and instructions. Their purpose is to guide behavior and ensure that security expectations and responsibilities are clearly communicated."
+    },
+    {
+      "id": 15,
+      "question": "Which of the following terms fall into the category of directive security controls? (Select 2 answers)",
+      "options": [
+        "IRP",
+        "AUP",
+        "IDS",
+        "MFA",
+        "IPS"
+      ],
+      "correct": [ 0, 1 ],
+      "explanation": " IRP (Incident Response Plan)-A directive control that provides clear procedures and guidance for how to respond to security incidents.,AUP (Acceptable Use Policy)-A directive control that defines acceptable and unacceptable behavior when using organizational resources.."
+    },
+    {
+      "id": 16,
+      "question": "Which of the terms listed below can be used to describe the basic principles of information security?",
+      "options": [
+        "PKI",
+        "AAA",
+        "GDPR",
+        "CIA"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "id": 17,
+      "question": "The term -Non-repudiation- describes the inability to deny responsibility for performing a specific action. In the context of data security, non-repudiation ensures data confidentiality, provides proof of data integrity, and proof of data origin.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "id": 18,
+      "question": "Which of the following best applies to the concept of non-repudiation?",
+      "options": [
+        "Digital certificate",
+        "MFA",
+        "Hashing",
+        "Encryption"
+      ],
+      "correct": 0,
+      "explanation": "A digital certificate, often used in digital signatures, provides proof of identity and ensures that a specific person or system performed an action. It enables non-repudiation by linking the action to a verifiable identity through public key infrastructure (PKI)."
+    },
+    {
+      "id": 19,
+      "question": "Which type of user account violates the concept of non-repudiation?",
+      "options": [
+        "Standard user account",
+        "Shared account",
+        "Guest user account",
+        "Service account"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "id": 20,
+      "question": "Which part of the AAA security architecture deals with the verification of the identity of a person or process?",
+      "options": [
+        "Authentication",
+        "Authorization",
+        "Accounting"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "id": 21,
+      "question": "In the AAA security architecture, the process of granting or denying access to resources is known as:",
+      "options": [
+        "Authentication",
+        "Authorization",
+        "Accounting"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "id": 22,
+      "question": "In the AAA security architecture, the process of tracking accessed services and logging resource consumption is called:",
+      "options": [
+        "Authentication",
+        "Authorization",
+        "Accounting"
+      ],
+      "correct": 2,
+      "explanation": "Accounting refers to the process of tracking user activity, logging access to services, and recording resource usage (e.g. time, data transferred, accessed files). It helps in auditing, billing, and detecting security incidents."
+    },
+    {
+      "id": 23,
+      "question": "Which of the following solutions provide(s) the AAA functionality? (Select all that apply)",
+      "options": [
+        "CHAP",
+        "TACACS+",
+        "PAP",
+        "RADIUS",
+        "MS-CHAP"
+      ],
+      "correct": [ 1, 3],
+      "explanation": "TACACS+ (Terminal Access Controller Access-Control System Plus)-A Cisco-developed protocol that provides centralized authentication, authorization, and accounting for users accessing network devices. RADIUS (Remote Authentication Dial-In User Service)-A widely-used protocol that supports authentication, authorization, and accounting, often used in wireless and VPN environments."
+    },
+    {
+      "id": 24,
+      "question": "In the context of the AAA framework, common methods for authenticating people include: (Select 3 answers)",
+      "options": [
+        "IP addresses",
+        "Usernames and passwords",
+        "MAC addresses",
+        "Biometrics",
+        "MFA"
+      ],
+      "correct": [ 1, 3, 4 ],
+      "explanation": ""
+    },
+    {
+      "id": 25,
+      "question": "Which of the answers listed below refer to common methods of device authentication used within the AAA framework? (Select 3 answers)",
+      "options": [
+        "Usernames and passwords",
+        "Digital certificates",
+        "IP addresses",
+        "MFA",
+        "Biometric authentication",
+        "MAC addresses"
+      ],
+      "correct": [ 1, 2, 5 ],
+      "explanation": ""
+    }
+  ]
+}

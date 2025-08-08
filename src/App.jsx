@@ -45,7 +45,10 @@ const topics = [
   { id: "penetration-testing", title: "Penetration Testing" },
 ];
 
-const practiceTests = [{ id: "practice-test2", title: "Practice Test 2" }];
+const practiceTests = [
+  { id: "practice-test1", title: "Practice Test 1" },
+  { id: "practice-test2", title: "Practice Test 2" },
+];
 
 // Function to load topic data from JSON files
 const loadTopicData = async (topicId) => {

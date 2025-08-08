@@ -1,6 +1,6 @@
 {
   "title": "Practice Test 2",
-  "description": "Practice questions for the second practice test",
+  "description": "This is a practice test 2 for CompTIA Security+ certification.",
   "questions": [
     {
       "id": 1,
@@ -199,7 +199,7 @@
         "User/device authentication",
         "All of the above"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": ""
     },
     {
