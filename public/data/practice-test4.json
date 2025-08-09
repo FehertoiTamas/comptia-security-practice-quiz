@@ -4,303 +4,293 @@
   "questions": [
     {
       "id": 1,
-      "question": "",
+      "question": "Which of the following answers refers to a legacy symmetric-key block cipher encryption algorithm?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "RC4",
+        "DES",
+        "RSA",
+        "DSA"
       ],
       "correct": 1,
-      "explanation": ""
+      "explanation": "Data Encryption Standard is an old symmetric-key block cipher that is now considered insecure due to its short key length."
     },
     {
       "id": 2,
-      "question": "",
+      "question": "Which of the answers listed below refers to a deprecated stream cipher used in some legacy applications, such as WEP?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "RSA",
+        "DES",
+        "SSL",
+        "RC4"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": ""
     },
     {
       "id": 3,
-      "question": "",
+      "question": " Which of the following answers refers to a deprecated (largely replaced by AES) symmetric-key block cipher encryption algorithm?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "ECDSA",
+        "RSA",
+        "IDEA",
+        "DSA"
       ],
-      "correct": 1,
-      "explanation": ""
+      "correct": 2,
+      "explanation": "International Data Encryption Algorithm is a symmetric-key block cipher largely replaced by AES."
     },
     {
       "id": 4,
-      "question": "",
+      "question": "What is the recommended replacement for DES?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "DSA",
+        "RSA",
+        "RC4",
+        "AES"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": ""
     },
     {
       "id": 5,
-      "question": "",
+      "question": " An IV is a random or pseudorandom value used in cryptography to ensure that the same plaintext input does not produce the same ciphertext output, even when the same encryption key is used. The IV is typically used with encryption algorithms in block cipher modes to enhance security by introducing randomness to the encryption process.",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "True",
+        "False"
       ],
-      "correct": 1,
-      "explanation": ""
+      "correct": 0,
+      "explanation": "An Initialization Vector (IV) adds randomness to encryption, preventing identical ciphertexts for identical plaintexts with the same key."
     },
     {
       "id": 6,
-      "question": "",
+      "question": "Which of the answers listed below refers to a logical operation commonly used in the context of cybersecurity, particularly in encryption and obfuscation techniques?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "AND",
+        "OR",
+        "NOT",
+        "XOR"
       ],
-      "correct": 1,
-      "explanation": ""
+      "correct": 3,
+      "explanation": "Exclusive OR is widely used in encryption because it can combine data with a key and be reversed using the same key."
     },
     {
       "id": 7,
-      "question": "",
+      "question": "Which of the following answers refers to a block cipher mode that works by chaining the ciphertext blocks together, such that each ciphertext block depends on the previous block?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "CBC",
+        "GCM",
+        "ECB",
+        "CFB"
       ],
-      "correct": 1,
-      "explanation": ""
+      "correct": 0,
+      "explanation": "Cipher Block Chaining links each ciphertext block to the previous one, adding dependency and improving security over ECB."
     },
     {
       "id": 8,
-      "question": "",
+      "question": "Which block mode transforms a block cipher into a stream cipher enabling the encryption of individual bits or bytes of data?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "CFB",
+        "CBC",
+        "GCM",
+        "ECB"
       ],
-      "correct": 1,
-      "explanation": ""
+      "correct": 0,
+      "explanation": "Cipher Feedback mode turns a block cipher into a stream cipher, allowing encryption of smaller units like bits or bytes."
     },
     {
       "id": 9,
-      "question": "",
+      "question": "A block cipher mode that combines a unique counter with encryption key to generate a stream of pseudorandom data blocks which are then used for encrypting data is called:",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "CBC",
+        "GCM",
+        "CFB",
+        "CTM"
       ],
-      "correct": 1,
-      "explanation": ""
+      "correct": 3,
+      "explanation": "Counter Mode (CTR/CTM) uses a counter value with the key to create a keystream for encrypting data."
     },
     {
       "id": 10,
-      "question": "",
+      "question": " Which of the block cipher modes listed below is the simplest/weakest and therefore not recommended for use?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "CBC",
+        "GCM",
+        "ECB",
+        "CTM"
       ],
-      "correct": 1,
-      "explanation": ""
+      "correct": 2,
+      "explanation": "Electronic Codebook mode encrypts each block independently, making patterns in the plaintext visible in the ciphertext."
     },
     {
       "id": 11,
-      "question": "",
+      "question": "Which block cipher mode combines CTM for encryption with an authentication mechanism to ensure both data confidentiality and integrity?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "CBC",
+        "GCM",
+        "ECB",
+        "CFB"
       ],
       "correct": 1,
-      "explanation": ""
+      "explanation": "Galois/Counter Mode combines counter mode encryption with authentication to provide both confidentiality and integrity."
     },
     {
       "id": 12,
-      "question": "",
+      "question": "In cryptography, the number of bits in a key used by a cryptographic algorithm is referred to as key size or key length. The key length determines the maximum number of combinations required to break the encryption algorithm, therefore typically a longer key means stronger cryptographic security.",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "True",
+        "False"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": ""
     },
     {
       "id": 13,
-      "question": "",
+      "question": "Which AES key length provides the highest level of security?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "128-bit key",
+        "192-bit key",
+        "256-bit key",
+        "320-bit key"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": ""
     },
     {
       "id": 14,
-      "question": "",
+      "question": "Which of the following answers refers to an embedded microcontroller used for secure boot, disk encryption, and system integrity verification?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "TPM",
+        "SoC",
+        "UEFI",
+        "HSM"
       ],
-      "correct": 1,
-      "explanation": ""
+      "correct": 0,
+      "explanation": "A Trusted Platform Module is a secure microcontroller used for cryptographic operations like secure boot, disk encryption, and integrity checks."
     },
     {
       "id": 15,
-      "question": "",
+      "question": "Which of the answers listed below refers to a piece of hardware and associated software/firmware designed to provide cryptographic and key management functions?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "EFS",
+        "HSM",
+        "SFC",
+        "TPM"
       ],
       "correct": 1,
-      "explanation": ""
+      "explanation": "A Hardware Security Module is a physical device that securely manages, stores, and processes cryptographic keys and operations."
     },
     {
       "id": 16,
-      "question": "",
+      "question": "Which of the following answers refers to a centralized server that is used to distribute cryptographic keys and authenticate users and services within a computer network?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "PKI",
+        "RAS",
+        "KDC",
+        "NAS"
       ],
-      "correct": 1,
-      "explanation": ""
+      "correct": 2,
+      "explanation": "A Key Distribution Center distributes cryptographic keys and authenticates users and services in a network, commonly used in Kerberos authentication."
     },
     {
       "id": 17,
-      "question": "",
+      "question": "In a Kerberos-protected network, this type of secure token is granted to users during their initial login to enable them access to multiple network services without the need to re-enter their login credentials.",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "OTP",
+        "TGT",
+        "AS",
+        "TGS"
       ],
       "correct": 1,
-      "explanation": ""
+      "explanation": "A Ticket Granting Ticket allows a user to request access to multiple services without re-entering credentials in a Kerberos environment."
     },
     {
       "id": 18,
-      "question": "",
+      "question": "In cryptography and security, the term -Secure enclave- typically refers to a protected and isolated hardware or software environment within a computing device, such as a smartphone, tablet, or computer, where sensitive data and cryptographic operations can be stored and processed securely.",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "True",
+        "False"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": ""
     },
     {
       "id": 19,
-      "question": "",
+      "question": "The term -Obfuscation- is used to describe techniques employed to obscure or hide the true meaning or nature of data, making it challenging for unauthorized parties to decipher or reverse-engineer the information.",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "True",
+        "False"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": ""
     },
     {
       "id": 20,
-      "question": "",
+      "question": "What is the purpose of steganography?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "Checking data integrity",
+        "Verifying hash values",
+        "Hiding data within another piece of data",
+        "Encrypting data"
       ],
-      "correct": 1,
-      "explanation": ""
+      "correct": 2,
+      "explanation": "Steganography conceals information inside other non-secret data, such as images, audio, or text."
     },
     {
       "id": 21,
-      "question": "",
+      "question": "In the field of data security, the term -Tokenization- refers to the process of replacing sensitive data with nonsensitive information which holds a reference to the original data and enables its processing but has no value when breached.",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "True",
+        "False"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": ""
     },
     {
       "id": 22,
-      "question": "",
+      "question": "Replacing password characters in a password field with a series of asterisks is an example of:",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "Data masking",
+        "Tokenization",
+        "Anonymization",
+        "Pseudo-anonymization"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": ""
     },
     {
       "id": 23,
-      "question": "",
+      "question": " A hash function is a mathematical algorithm that maps data of arbitrary size to a fixed-size hash value, typically represented as a short string of characters. The hash function result, also known as a digest or checksum, provides a unique representation of the original data input. The functionality of hash functions relies on the fact that if there is any change to the data after the original hash was generated, the new hash value calculated after content modification will be different from the original result because hash functions are designed to be sensitive to changes in the input data.",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "True",
+        "False"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": ""
     },
     {
       "id": 24,
-      "question": "",
+      "question": "Hash functions find use in a variety of applications, including:",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "Cryptography",
+        "Data integrity verification",
+        "Password verification and storage",
+        "Digital signatures",
+        "Blockchain technology",
+        "All of the above"
       ],
-      "correct": 1,
+      "correct": 5,
       "explanation": ""
     },
     {
       "id": 25,
-      "question": "",
+      "question": "Which of the answers listed below refers to a cryptographic hash function that has been widely used in the past but is now considered deprecated for security-sensitive applications due to known vulnerabilities?",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "MD5",
+        "SHA",
+        "CRC",
+        "HMAC"
       ],
-      "correct": 1,
-      "explanation": ""
+      "correct": 0,
+      "explanation": "MD5 is an older hash function now considered insecure because of vulnerabilities to collisions."
     }
   ]
 }
