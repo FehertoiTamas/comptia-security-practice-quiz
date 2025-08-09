@@ -1,0 +1,305 @@
+{
+  "title": "Practice Test 3",
+  "description": "This is a practice test 3 for the CompTIA Security+ certification.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The MIME specification extends the email message format beyond plain text, enabling the transfer of graphics, audio, and video files over the Internet mail system. S/MIME is an enhanced version of the MIME protocol that enables email security features by providing encryption, authentication, message integrity, and other related services.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "id": 2,
+      "question": "What is the name of a network protocol that enables secure file transfer over SSH?",
+      "options": [
+        "TFTP",
+        "SFTP",
+        "Telnet",
+        "FTPS"
+      ],
+      "correct": 1,
+      "explanation": "SFTP (Secure File Transfer Protocol) is a secure version of the File Transfer Protocol (FTP) that uses SSH to encrypt the data being transferred, ensuring confidentiality and integrity."
+    },
+    {
+      "id": 1,
+      "question": "SFTP is an extension of the FTP protocol that adds support for SSL/TLS encryption.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "SFTP is not an extension of FTP — it’s a completely different protocol that works over SSH, not SSL/TLS."
+    },
+    {
+      "id": 4,
+      "question": "A type of cryptographic network protocol for secure data communication, remote command-line login, remote command execution, and other secure network services between two networked computers is known as:",
+      "options": [
+        "RDP",
+        "SSH",
+        "Telnet",
+        "SCP"
+      ],
+      "correct": 1,
+      "explanation": "SSH (Secure Shell) is a cryptographic protocol that provides secure remote access, command execution, and data communication over an unsecured network."
+    },
+    {
+      "id": 5,
+      "question": "Which of the answers listed below refers to a suite of protocols and technologies providing encryption, authentication, and data integrity for network traffic?",
+      "options": [
+        "TLS",
+        "SSH",
+        "IPsec",
+        "VPN"
+      ],
+      "correct": 2,
+      "explanation": "IPsec it’s a suite of protocols that secures IP communications by providing encryption, authentication, and data integrity."
+    },
+    {
+      "id": 6,
+      "question": "Which part of IPsec provides authentication, integrity, and confidentiality?",
+      "options": [
+        "SPD",
+        "PFS",
+        "AH",
+        "ESP"
+      ],
+      "correct": 3,
+      "explanation": "Encapsulating Security Payload (ESP) provides authentication, integrity, and confidentiality."
+    },
+    {
+      "id": 7,
+      "question": " A system that uses public network (such as the Internet) as a means for creating private encrypted connections between remote locations is referred to as:",
+      "options": [
+        "WWAN",
+        "VPN",
+        "PAN",
+        "VLAN"
+      ],
+      "correct": 1,
+      "explanation": "A Virtual Private Network creates secure, encrypted connections over a public network like the Internet."
+    },
+    {
+      "id": 8,
+      "question": "Which protocol enables secure, real-time delivery of audio and video over an IP network?",
+      "options": [
+        "S/MIME",
+        "RTP",
+        "SIP",
+        "SRTP"
+      ],
+      "correct": 3,
+      "explanation": "SRTP - Secure Real-time Transport Protocol encrypts and authenticates real-time audio and video streams over IP networks."
+    },
+    {
+      "id": 9,
+      "question": "An encryption protocol primarily used in Wi-Fi networks implementing the WPA2 security standard is called:",
+      "options": [
+        "TKIP",
+        "CCMP",
+        "SSL",
+        "IPsec"
+      ],
+      "correct": 1,
+      "explanation": "CCMP - Counter Mode with Cipher Block Chaining Message Authentication Code Protocol is the encryption protocol used in WPA2 for Wi-Fi security."
+    },
+    {
+      "id": 10,
+      "question": "A security protocol designed to improve the security of existing WEP implementations is known as:",
+      "options": [
+        "WPA2",
+        "RC4",
+        "CCMP",
+        "TKIP"
+      ],
+      "correct": 3,
+      "explanation": "Temporal Key Integrity Protocol was created to enhance WEP security without requiring new hardware."
+    },
+    {
+      "id": 11,
+      "question": "Which of the following answers refer(s) to deprecated/insecure encryption protocols and cryptographic hash functions? (Select all that apply)",
+      "options": [
+        "DES",
+        "AES-256",
+        "MD5",
+        "ECC",
+        "SHA-1",
+        "SSL",
+        "RC4"
+      ],
+      "correct": [ 0, 2, 4, 5, 6 ],
+      "explanation": ""
+    },
+    {
+      "id": 12,
+      "question": "Which cryptographic protocol is designed to provide secure communications over a computer network and is the successor to SSL?",
+      "options": [
+        "IPsec",
+        "TLS",
+        "AES",
+        "CCMP"
+      ],
+      "correct": 1,
+      "explanation": "Transport Layer Security is the successor to SSL, providing secure communications over a network."
+    },
+    {
+      "id": 13,
+      "question": " Examples of techniques used for encrypting information include symmetric encryption (also called public-key encryption) and asymmetric encryption (also called secret-key encryption, or session-key encryption).",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "Symmetric encryption is secret-key encryption, while asymmetric encryption is public-key encryption — the statement in the question reverses them."
+    },
+    {
+      "id": 14,
+      "question": "In asymmetric encryption, any message encrypted with the use of a public key can only be decrypted by applying the same algorithm and a matching private key (and vice versa).",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "id": 15,
+      "question": "Which of the algorithms listed below are not symmetric ciphers? (Select 3 answers)",
+      "options": [
+        "AES",
+        "DES",
+        "DHE",
+        "ECC",
+        "IDEA",
+        "RC4",
+        "RSA"
+      ],
+      "correct": [ 2, 3, 6 ],
+      "explanation": ""
+    },
+    {
+      "id": 16,
+      "question": "Which of the following algorithms do(es) not fall into the category of asymmetric encryption? (Select all that apply)",
+      "options": [
+        "AES",
+        "DES",
+        "DHE",
+        "ECC",
+        "IDEA",
+        "RC4",
+        "RSA"
+      ],
+      "correct": [ 0, 1, 4, 5 ],
+      "explanation": ""
+    },
+    {
+      "id": 17,
+      "question": "The term -KEK- refers to a type of cryptographic key often used in key management systems to add an additional layer of security when encrypting and decrypting other cryptographic keys.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "A Key Encryption Key (KEK) is specifically used to encrypt and protect other cryptographic keys."
+    },
+    {
+      "id": 18,
+      "question": "Which of the answers listed below refers to a shared secret authentication method used in WPA, WPA2, and EAP?",
+      "options": [
+        "PSK",
+        "802.1X",
+        "SAE",
+        "TKIP"
+      ],
+      "correct": 0,
+      "explanation": "Pre-Shared Key is an authentication method where all devices use the same shared secret (password) in WPA and WPA2."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following answers refers to a protocol used to set up secure connections and exchange of cryptographic keys in IPsec VPNs?",
+      "options": [
+        "SSL",
+        "IKE",
+        "ESP",
+        "DHE"
+      ],
+      "correct": 1,
+      "explanation": "Internet Key Exchange is used in IPsec VPNs to set up secure connections and negotiate cryptographic keys."
+    },
+    {
+      "id": 20,
+      "question": "Which of the answers listed below refers to a key exchange protocol that generates temporary keys for each session, providing forward secrecy to protect past and future communications?",
+      "options": [
+        "PFS",
+        "SHA",
+        "PGP",
+        "DHE"
+      ],
+      "correct": 3,
+      "explanation": "Diffie-Hellman Ephemeral generates temporary session keys, ensuring forward secrecy."
+    },
+    {
+      "id": 21,
+      "question": "Which of the following answers refers to a cryptographic key exchange protocol that leverages ECC for enhanced security and efficiency?",
+      "options": [
+        "IKE",
+        "ECDHE",
+        "DHE",
+        "ECDSA"
+      ],
+      "correct": 1,
+      "explanation": "Elliptic Curve Diffie-Hellman Ephemeral uses ECC to provide secure key exchange with forward secrecy."
+    },
+    {
+      "id": 22,
+      "question": "Which of the answers listed below refers to a solution designed to strengthen the security of session keys?",
+      "options": [
+        "ECB",
+        "PFS",
+        "EFS",
+        "PFX"
+      ],
+      "correct": 1,
+      "explanation": "Perfect Forward Secrecy ensures session keys are not compromised even if the server’s private key is later exposed."
+    },
+    {
+      "id": 23,
+      "question": "Which of the following answers refers to a public-key cryptosystem used for digital signatures, secure key exchange, and encryption?",
+      "options": [
+        "ECC",
+        "RSA",
+        "PKI",
+        "DSA"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "id": 24,
+      "question": "Which cryptographic solution would be best suited for low-power devices, such as IoT devices, embedded systems, and mobile devices?",
+      "options": [
+        "ECC",
+        "DES",
+        "RSA",
+        "AES"
+      ],
+      "correct": 0,
+      "explanation": "Elliptic Curve Cryptography provides strong security with smaller key sizes, making it ideal for low-power and resource-constrained devices."
+    },
+    {
+      "id": 25,
+      "question": "Which of the cryptographic algorithms listed below is the least vulnerable to attacks?",
+      "options": [
+        "AES",
+        "DES",
+        "RC4",
+        "3DES"
+      ],
+      "correct": 0,
+      "explanation": ""
+    }
+  ]
+}
