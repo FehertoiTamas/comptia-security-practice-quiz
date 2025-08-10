@@ -1,0 +1,304 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the answers listed below refers to a security vulnerability that enables inserting malicious code into input fields, such as search bars or login forms, to execute unauthorized commands on a database?",
+    "options": [
+      "RCE",
+      "SQLi",
+      "XSS",
+      "CSRF"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 2,
+    "question": "Which of the following indicates an SQL injection attack attempt?",
+    "options": [
+      "DELETE FROM itemDB WHERE itemID = '1';",
+      "SELECT * FROM users WHERE userName = 'Alice' AND password = '' OR '1' = '1';",
+      "DROP TABLE itemDB;",
+      "SELECT * FROM users WHERE email = 'example@example.com' AND password = '';"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 3,
+    "question": "Which of the answers listed below describe the characteristics of a cross-site scripting attack? (Select 3 answers)",
+    "options": [
+      "Exploits the trust a user's web browser has in a website",
+      "A malicious script is injected into a trusted website",
+      "User's browser executes attacker's script",
+      "Exploits the trust a website has in the user's web browser",
+      "A user is tricked by an attacker into submitting unauthorized web requests",
+      "Website executes attacker's requests"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 4,
+    "question": "Which of the following answers refers to a type of software embedded into a hardware chip?",
+    "options": [
+      "Firmware",
+      "Middleware",
+      "Device driver",
+      "Machine code"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 5,
+    "question": "Which of the terms listed below refers to a product's life-cycle management phase in which a product is no longer being produced or sold?",
+    "options": [
+      "EOS",
+      "EOF",
+      "EOL",
+      "EOA"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 6,
+    "question": "What is the main vulnerability related to legacy hardware?",
+    "options": [
+      "Compatibility issues",
+      "Lack of security updates and patches",
+      "Worn-out physical components",
+      "Lack of skilled personnel to run it and maintain it"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 7,
+    "question": "The term \"VM escape\" refers to the process of breaking out of the boundaries of a guest operating system installation to access the primary hypervisor controlling all the virtual machines on the host machine.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 8,
+    "question": "Which of the following answers refers to a virtualization-related vulnerability where virtualized assets allocated to one VM are improperly isolated and can be accessed or compromised by another VM?",
+    "options": [
+      "Resource reuse",
+      "Privilege escalation",
+      "Resource exhaustion",
+      "Concurrent session usage"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 9,
+    "question": "Which of the answers listed below refers to a cloud-related vulnerability type?",
+    "options": [
+      "Insecure APIs",
+      "Poor access controls",
+      "Lack of security updates",
+      "Misconfigured cloud storage",
+      "Shadow IT / Malicious insiders",
+      "All of the above"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 10,
+    "question": "The practice of installing mobile apps from websites and app stores other than the official marketplaces is referred to as:",
+    "options": [
+      "Jailbreaking",
+      "Rooting",
+      "Sideloading",
+      "Carrier unlocking"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 11,
+    "question": "Which of the following terms is used to describe the process of removing software restrictions imposed by Apple on its iOS operating system?",
+    "options": [
+      "Sideloading",
+      "Carrier unlocking",
+      "Rooting",
+      "Jailbreaking"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 12,
+    "question": "The term \"Rooting\" refers to the capability of gaining administrative access to the operating system and system applications on:",
+    "options": [
+      "Android devices",
+      "iOS devices",
+      "Microsoft devices",
+      "All types of mobile devices"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 13,
+    "question": "A type of attack aimed at exploiting vulnerability that is present in already released software but unknown to the software developer is known as:",
+    "options": [
+      "On-path attack",
+      "IV attack",
+      "Zero-day attack",
+      "Replay attack"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 14,
+    "question": "Malware that restricts access to a computer system by encrypting files or locking the entire system down until the user performs requested action is called:",
+    "options": [
+      "Grayware",
+      "Adware",
+      "Ransomware",
+      "Spyware"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 15,
+    "question": "A Trojan horse is a type of software that performs harmful actions under the guise of a legitimate and useful program. The most characteristic feature of Trojan horse is that while it may function as a legitimate program and possess all the expected functionalities, it also contains a concealed portion of malicious code that the user is unaware of.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 16,
+    "question": "Which type of Trojan enables unauthorized remote access to a compromised system?",
+    "options": [
+      "APT",
+      "RAT",
+      "MaaS",
+      "PUP"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 17,
+    "question": "A standalone malicious computer program that typically propagates itself over a computer network to adversely affect system resources and network bandwidth is referred to as:",
+    "options": [
+      "Worm",
+      "Fileless virus",
+      "Bot",
+      "Logic bomb"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 18,
+    "question": "Malicious software collecting information about users without their knowledge/consent is known as:",
+    "options": [
+      "Cryptomalware",
+      "Adware",
+      "Ransomware",
+      "Spyware"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 19,
+    "question": "Which of the answers listed below refer to the characteristic features of bloatware? (Select 3 answers)",
+    "options": [
+      "Pre-installed on a device by the device manufacturer or retailer",
+      "Generally considered undesirable due to negative impact on system performance",
+      "Installed without user consent",
+      "Can be pre-installed, downloaded, or bundled with other software",
+      "Generally considered undesirable due to negative impact on system performance, privacy, and security"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 20,
+    "question": "Which of the following answers refer to the characteristics of a PUP? (Select 3 answers)",
+    "options": [
+      "Often installed without clear user consent",
+      "Can be pre-installed, downloaded, or bundled with other software",
+      "Generally considered undesirable due to negative impact on system performance, privacy, and security",
+      "Pre-installed on a device by the device manufacturer or retailer",
+      "Generally considered undesirable due to negative impact on system performance"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 21,
+    "question": "Which of the statements listed below apply to the definition of a computer virus? (Select 3 answers)",
+    "options": [
+      "A self-replicating computer program containing malicious segment",
+      "Malware that typically requires its host application to be run to make the virus active",
+      "A standalone malicious computer program that replicates itself over a computer network",
+      "Malware that can run by itself without any interaction",
+      "Malicious code that typically attaches itself to an application program or other executable component",
+      "A self-contained malicious program or code that does need a host to propagate itself"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 22,
+    "question": "Which of the following is an example of spyware?",
+    "options": [
+      "Keylogger",
+      "Vulnerability scanner",
+      "Computer worm",
+      "Packet sniffer"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 23,
+    "question": "Malicious code activated by a specific event is called:",
+    "options": [
+      "Cryptomalware",
+      "Backdoor",
+      "Rootkit",
+      "Logic bomb"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 24,
+    "question": "Which of the following answers refers to a collection of software tools used by a hacker to mask intrusion and obtain administrator-level access to a computer or computer network?",
+    "options": [
+      "Rootkit",
+      "Spyware",
+      "Backdoor",
+      "Trojan"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 25,
+    "question": "The term \"RFID cloning\" refers to copying the data stored on any RFID-enabled device (including tags, cards, key fobs, implants, and other objects embedded with RFID technology) onto another RFID-enabled device, which then can be read and used in the same way as the original tag. While RFID cloning can be utilized for legitimate purposes, such as replicating important tags for backup and testing purposes, it also poses significant security risk, as duplicate tags can potentially be used for gaining unauthorized access or unauthorized information disclosure.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": ""
+  }
+]
