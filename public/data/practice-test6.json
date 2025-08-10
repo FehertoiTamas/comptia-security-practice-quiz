@@ -1,4 +1,7 @@
-[
+{
+  "title": "Practice Test 6",
+  "description": "This is a practice test 6 for the CompTIA Security+ certification.",
+  "questions": [
   {
     "id": 1,
     "question": "Which of the following answers can be used to describe self-signed digital certificates? (Select 3 answers)",
@@ -10,8 +13,8 @@
       "Trusted by default by web browsers and other applications",
       "Not backed by a well-known and trusted third party"
     ],
-    "correct": 0,
-    "explanation": ""
+    "correct": [ 1, 2, 5 ],
+    "explanation": "Self-signed certificates are generated and signed by the same entity, so they aren’t inherently trusted outside controlled environments."
   },
   {
     "id": 2,
@@ -23,7 +26,7 @@
       "Wildcard certificate",
       "None of the above"
     ],
-    "correct": 0,
+    "correct": 4,
     "explanation": ""
   },
   {
@@ -59,7 +62,7 @@
       "Hybrid model (combining aspects of different models)",
       "All of the above"
     ],
-    "correct": 0,
+    "correct": 7,
     "explanation": ""
   },
   {
@@ -71,7 +74,7 @@
       "DN",
       "CRL"
     ],
-    "correct": 0,
+    "correct": 1,
     "explanation": ""
   },
   {
@@ -83,7 +86,7 @@
       "Extended Validation (EV) certificate",
       "Wildcard certificate"
     ],
-    "correct": 0,
+    "correct": 3,
     "explanation": ""
   },
   {
@@ -95,7 +98,7 @@
       "Subject Alternative Name (SAN) certificate",
       "Root signing certificate"
     ],
-    "correct": 0,
+    "correct": 2,
     "explanation": ""
   },
   {
@@ -157,8 +160,8 @@
       "XSRF",
       "DDoS"
     ],
-    "correct": 0,
-    "explanation": ""
+    "correct": 1,
+    "explanation": "Advanced Persistent Threat."
   },
   {
     "id": 16,
@@ -167,7 +170,7 @@
       "True",
       "False"
     ],
-    "correct": 0,
+    "correct": 1,
     "explanation": ""
   },
   {
@@ -181,7 +184,7 @@
       "Malware attachments",
       "All of the above"
     ],
-    "correct": 0,
+    "correct": 5,
     "explanation": ""
   },
   {
@@ -193,7 +196,7 @@
       "Smishing",
       "Pharming"
     ],
-    "correct": 0,
+    "correct": 2,
     "explanation": ""
   },
   {
@@ -208,7 +211,7 @@
       "Malicious link/attachment",
       "All of the above"
     ],
-    "correct": 0,
+    "correct": 6,
     "explanation": ""
   },
   {
@@ -221,7 +224,7 @@
       "Brand impersonation",
       "Malware-embedded images"
     ],
-    "correct": 0,
+    "correct": [ 0, 2, 4 ],
     "explanation": ""
   },
   {
@@ -236,7 +239,7 @@
       "Malicious executables",
       "All of the above"
     ],
-    "correct": 0,
+    "correct": 6,
     "explanation": ""
   },
   {
@@ -248,7 +251,7 @@
       "Vishing",
       "Phishing"
     ],
-    "correct": 0,
+    "correct": 2,
     "explanation": ""
   },
   {
@@ -261,7 +264,7 @@
       "Data exfiltration",
       "Social engineering attacks"
     ],
-    "correct": 0,
+    "correct": [ 1, 3 ],
     "explanation": ""
   },
   {
@@ -275,7 +278,7 @@
       "Infected executable file",
       "Malicious attachment in email application"
     ],
-    "correct": 0,
+    "correct": [ 0, 1, 3, 4, 5 ],
     "explanation": ""
   },
   {
@@ -288,7 +291,7 @@
       "Infected macro",
       "Packet sniffing"
     ],
-    "correct": 0,
+    "correct": [ 2, 4 ],
     "explanation": ""
   }
-]
+]}
