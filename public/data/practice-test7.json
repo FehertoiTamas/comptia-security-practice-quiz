@@ -1,4 +1,7 @@
-[
+{
+  "title": "Practice Test 7",
+  "description": "This is a practice test 7 for the CompTIA Security+ certification.",
+  "questions": [
   {
     "id": 1,
     "question": "Exploiting known vulnerability is a common threat vector for:",
@@ -8,7 +11,7 @@
       "Newly released systems/apps",
       "Systems/apps with zero-day vulnerability"
     ],
-    "correct": 0,
+    "correct": 1,
     "explanation": ""
   },
   {
@@ -20,8 +23,8 @@
       "WEP",
       "WAP"
     ],
-    "correct": 0,
-    "explanation": ""
+    "correct": 1,
+    "explanation": "Wi-Fi Protected Setup simplifies wireless network configuration for non-technical users."
   },
   {
     "id": 3,
@@ -34,7 +37,7 @@
       "WPA2",
       "WEP"
     ],
-    "correct": 0,
+    "correct": [ 0, 2, 4, 5 ],
     "explanation": ""
   },
   {
@@ -57,7 +60,7 @@
       "Port sniffing",
       "All of the above"
     ],
-    "correct": 0,
+    "correct": 2,
     "explanation": ""
   },
   {
@@ -79,7 +82,7 @@
       "Open service ports",
       "Insufficient logging and monitoring"
     ],
-    "correct": 0,
+    "correct": 2,
     "explanation": ""
   },
   {
@@ -101,8 +104,8 @@
       "MSP",
       "MSSP"
     ],
-    "correct": 0,
-    "explanation": ""
+    "correct": 2,
+    "explanation": "A Managed Service Provider offers IT services and support for companies without in-house IT staff."
   },
   {
     "id": 10,
@@ -113,8 +116,8 @@
       "MSA",
       "MSSP"
     ],
-    "correct": 0,
-    "explanation": ""
+    "correct": 3,
+    "explanation": "A Managed Security Service Provider specializes in IT security management for clients."
   },
   {
     "id": 11,
@@ -126,7 +129,7 @@
       "Operational disruptions",
       "Social engineering techniques"
     ],
-    "correct": 0,
+    "correct": [ 2, 4],
     "explanation": ""
   },
   {
@@ -150,7 +153,7 @@
       "Tailgating",
       "Impersonation"
     ],
-    "correct": 0,
+    "correct": 3,
     "explanation": ""
   },
   {
@@ -162,8 +165,8 @@
       "Vishing",
       "Pharming"
     ],
-    "correct": 0,
-    "explanation": ""
+    "correct": 1,
+    "explanation": "BEC stands for Business Email Compromise."
   },
   {
     "id": 15,
@@ -174,7 +177,7 @@
       "Pretexting",
       "Watering hole attack"
     ],
-    "correct": 0,
+    "correct": 2,
     "explanation": ""
   },
   {
@@ -186,8 +189,8 @@
       "PBX systems",
       "Web browsers"
     ],
-    "correct": 0,
-    "explanation": ""
+    "correct": 1,
+    "explanation": "A watering hole attack is a cyberattack where attackers identify websites frequently visited by their target group and compromise those sites by injecting malicious code. When targets visit the infected site, their systems get infected or exploited."
   },
   {
     "id": 17,
@@ -208,7 +211,7 @@
       "Replay attack",
       "Pointer dereference"
     ],
-    "correct": 0,
+    "correct": 1,
     "explanation": ""
   },
   {
@@ -221,7 +224,7 @@
       "INI"
     ],
     "correct": 0,
-    "explanation": ""
+    "explanation": "Dynamic Link Library contains reusable code that multiple Windows applications can share."
   },
   {
     "id": 20,
@@ -232,7 +235,7 @@
       "Pointer dereference",
       "Buffer overflow"
     ],
-    "correct": 0,
+    "correct": 1,
     "explanation": ""
   },
   {
@@ -244,7 +247,7 @@
       "Memory leak",
       "Privilege escalation"
     ],
-    "correct": 0,
+    "correct": 1,
     "explanation": ""
   },
   {
@@ -268,8 +271,8 @@
       "TOU",
       "TSIG"
     ],
-    "correct": 0,
-    "explanation": ""
+    "correct": 1,
+    "explanation": "Time of Check to Time of Use vulnerability occurs when a resource’s state changes between the check and its use."
   },
   {
     "id": 24,
@@ -282,7 +285,7 @@
       "Compromised software development process",
       "All of the above"
     ],
-    "correct": 0,
+    "correct": 5,
     "explanation": ""
   },
   {
@@ -297,7 +300,7 @@
       "Network-related vulnerabilities (DoS attacks, remote code execution attacks)",
       "All of the above answer choices are examples of OS-based vulnerabilities"
     ],
-    "correct": 0,
+    "correct": 6,
     "explanation": ""
   }
-]
+  ]}
