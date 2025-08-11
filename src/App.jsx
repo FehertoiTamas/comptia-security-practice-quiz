@@ -53,6 +53,7 @@ const practiceTests = [
   { id: "practice-test5", title: "Practice Test 5" },
   { id: "practice-test6", title: "Practice Test 6" },
   { id: "practice-test7", title: "Practice Test 7" },
+  { id: "practice-test8", title: "Practice Test 8" },
 ];
 
 // Function to load topic data from JSON files

@@ -1,4 +1,7 @@
-[
+{
+  "title": "Practice Test 8",
+  "description": "This is a practice test 8 for the CompTIA Security+ certification.",
+  "questions": [
   {
     "id": 1,
     "question": "Which of the answers listed below refers to a security vulnerability that enables inserting malicious code into input fields, such as search bars or login forms, to execute unauthorized commands on a database?",
@@ -8,7 +11,7 @@
       "XSS",
       "CSRF"
     ],
-    "correct": 0,
+    "correct": 1,
     "explanation": ""
   },
   {
@@ -20,7 +23,7 @@
       "DROP TABLE itemDB;",
       "SELECT * FROM users WHERE email = 'example@example.com' AND password = '';"
     ],
-    "correct": 0,
+    "correct": 1,
     "explanation": ""
   },
   {
@@ -34,7 +37,7 @@
       "A user is tricked by an attacker into submitting unauthorized web requests",
       "Website executes attacker's requests"
     ],
-    "correct": 0,
+    "correct": [ 0, 1, 2 ],
     "explanation": ""
   },
   {
@@ -58,8 +61,8 @@
       "EOL",
       "EOA"
     ],
-    "correct": 0,
-    "explanation": ""
+    "correct": 2,
+    "explanation": "End of Life"
   },
   {
     "id": 6,
@@ -70,7 +73,7 @@
       "Worn-out physical components",
       "Lack of skilled personnel to run it and maintain it"
     ],
-    "correct": 0,
+    "correct": 1,
     "explanation": ""
   },
   {
@@ -106,7 +109,7 @@
       "Shadow IT / Malicious insiders",
       "All of the above"
     ],
-    "correct": 0,
+    "correct": 5,
     "explanation": ""
   },
   {
@@ -118,7 +121,7 @@
       "Sideloading",
       "Carrier unlocking"
     ],
-    "correct": 0,
+    "correct": 2,
     "explanation": ""
   },
   {
@@ -130,7 +133,7 @@
       "Rooting",
       "Jailbreaking"
     ],
-    "correct": 0,
+    "correct": 3,
     "explanation": ""
   },
   {
@@ -154,7 +157,7 @@
       "Zero-day attack",
       "Replay attack"
     ],
-    "correct": 0,
+    "correct": 2,
     "explanation": ""
   },
   {
@@ -166,7 +169,7 @@
       "Ransomware",
       "Spyware"
     ],
-    "correct": 0,
+    "correct": 2,
     "explanation": ""
   },
   {
@@ -188,8 +191,8 @@
       "MaaS",
       "PUP"
     ],
-    "correct": 0,
-    "explanation": ""
+    "correct": 1,
+    "explanation": "Remote Access Trojan"
   },
   {
     "id": 17,
@@ -212,7 +215,7 @@
       "Ransomware",
       "Spyware"
     ],
-    "correct": 0,
+    "correct": 3,
     "explanation": ""
   },
   {
@@ -225,7 +228,7 @@
       "Can be pre-installed, downloaded, or bundled with other software",
       "Generally considered undesirable due to negative impact on system performance, privacy, and security"
     ],
-    "correct": 0,
+    "correct": [ 0, 1, 2 ],
     "explanation": ""
   },
   {
@@ -238,8 +241,8 @@
       "Pre-installed on a device by the device manufacturer or retailer",
       "Generally considered undesirable due to negative impact on system performance"
     ],
-    "correct": 0,
-    "explanation": ""
+    "correct": [ 0, 1, 2 ],
+    "explanation": "Potentially Unwanted Program."
   },
   {
     "id": 21,
@@ -252,7 +255,7 @@
       "Malicious code that typically attaches itself to an application program or other executable component",
       "A self-contained malicious program or code that does need a host to propagate itself"
     ],
-    "correct": 0,
+    "correct": [ 0, 1, 4 ],
     "explanation": ""
   },
   {
@@ -276,7 +279,7 @@
       "Rootkit",
       "Logic bomb"
     ],
-    "correct": 0,
+    "correct": 3,
     "explanation": ""
   },
   {
@@ -301,4 +304,4 @@
     "correct": 0,
     "explanation": ""
   }
-]
+]}
