@@ -1,0 +1,307 @@
+{
+  "title": "Practice Test 9",
+  "description": "This is a practice test 9 for the CompTIA Security+ certification.",
+  "questions": [
+  {
+    "id": 1,
+    "question": "As opposed to simple DoS attacks that usually are performed from a single system, a DDoS attack uses multiple compromised computer systems to perform the attack against its target. The intermediary systems that are used as a platform for the attack (often referred to as zombies, and collectively as a botnet) are the secondary victims of the DDoS attack.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 2,
+    "question": "A type of DDoS attack where an attacker exploits vulnerabilities in certain services or protocols to generate responses that are much larger than the original request is referred to as:",
+    "options": [
+      "Amplified DDoS attack",
+      "Volumetric DDoS attack",
+      "Reflected DDoS attack",
+      "Application DDoS attack"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 3,
+    "question": "What defines a reflected DDoS attack?",
+    "options": [
+      "Overwhelming the target with a high volume of traffic to saturate its bandwidth",
+      "Exploiting vulnerabilities in network protocols to consume resources and disrupt services",
+      "Utilizing third-party servers to reflect and amplify attack traffic towards the target",
+      "Targeting vulnerabilities in applications or web servers to exhaust resources"
+    ],
+    "correct": 2,
+    "explanation": ""
+  },
+  {
+    "id": 4,
+    "question": "A DNS amplification attack is a type of DDoS attack wherein an attacker sends a small, specially crafted DNS query containing a spoofed IP address (the victim’s IP) to a compromised DNS server. Upon receiving the query, the DNS server generates a much larger response packet, which is then sent to the victim's IP address, causing potential disruption due to overwhelming traffic.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 5,
+    "question": "Which of the answers listed below refers to a cyberattack technique that relies on providing false DNS information to a DNS resolver for the purpose of redirecting or manipulating the resolution of domain names to malicious IP addresses?",
+    "options": [
+      "DNS spoofing",
+      "Credential stuffing",
+      "URL hijacking",
+      "Domain hijacking"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 6,
+    "question": "Remapping a domain name to a rogue IP address is an example of what kind of exploit?",
+    "options": [
+      "URL hijacking",
+      "DNS cache poisoning",
+      "Domain hijacking",
+      "ARP poisoning"
+    ],
+    "correct": 1,
+    "explanation": ""
+  },
+  {
+    "id": 7,
+    "question": "When domain registrants due to unlawful actions of third parties lose control over their domain names, they fall victim to:",
+    "options": [
+      "Sybil attack",
+      "Domain hijacking",
+      "Typosquatting",
+      "URL hijacking"
+    ],
+    "correct": 1,
+    "explanation": ""
+  },
+  {
+    "id": 8,
+    "question": "Which of the following can be classified as malicious activity indicator on a wireless network?",
+    "options": [
+      "Rogue AP",
+      "Jump server",
+      "Unmanaged switch",
+      "Network tap"
+    ],
+    "correct": 0,
+    "explanation": "Rogue Access Point"
+  },
+  {
+    "id": 9,
+    "question": "The practice of gaining unauthorized access to a Bluetooth device is known as:",
+    "options": [
+      "Phishing",
+      "Bluejacking",
+      "Smishing",
+      "Bluesnarfing"
+    ],
+    "correct": 3,
+    "explanation": "Bluesnarfing → stealing data from a Bluetooth device without permission (malicious)"
+  },
+  {
+    "id": 10,
+    "question": "A wireless disassociation attack is a type of: (Select 2 answers)",
+    "options": [
+      "Downgrade attack",
+      "Deauthentication attack",
+      "Brute-force attack",
+      "DoS attack",
+      "Cryptographic attack"
+    ],
+    "correct": [ 1, 3 ],
+    "explanation": "A wireless disassociation attack works by sending spoofed deauthentication frames to disconnect a client from an access point, effectively causing a denial of service."
+  },
+  {
+    "id": 11,
+    "question": "A wireless jamming attack is a type of:",
+    "options": [
+      "Cryptographic attack",
+      "DoS attack",
+      "Brute-force attack",
+      "Downgrade attack"
+    ],
+    "correct": 1,
+    "explanation": "A wireless jamming attack floods the radio frequency spectrum with noise or signals, disrupting legitimate communication — this makes it a denial-of-service attack."
+  },
+  {
+    "id": 12,
+    "question": "Which of the answers listed below refers to RFID vulnerability?",
+    "options": [
+      "Spoofing",
+      "Eavesdropping",
+      "RFID cloning",
+      "Data interception",
+      "Replay attack",
+      "DoS attack",
+      "All of the above"
+    ],
+    "correct": 6,
+    "explanation": ""
+  },
+  {
+    "id": 13,
+    "question": "Which of the following is a vulnerability characteristic to NFC communication?",
+    "options": [
+      "Eavesdropping",
+      "Data interception",
+      "Replay attacks",
+      "DoS attacks",
+      "All of the above"
+    ],
+    "correct": 4,
+    "explanation": ""
+  },
+  {
+    "id": 14,
+    "question": "Which wireless attack focuses on exploiting vulnerabilities found in WEP?",
+    "options": [
+      "IV attack",
+      "War driving",
+      "SSID spoofing",
+      "Bluejacking"
+    ],
+    "correct": 0,
+    "explanation": "WEP uses a weak initialization vector (IV) in its encryption process, which can be exploited to recover the encryption key."
+  },
+  {
+    "id": 15,
+    "question": "Which of the statements listed below can be used to describe the characteristics of an on-path attack? (Select all that apply)",
+    "options": [
+      "An on-path attack is also known as MITM attack",
+      "Attackers place themselves on the communication route between two devices",
+      "Attackers intercept or modify packets sent between two communicating devices",
+      "Attackers do not have access to packets exchanged during the communication between two devices"
+    ],
+    "correct": [ 0, 1, 2 ],
+    "explanation": ""
+  },
+  {
+    "id": 16,
+    "question": "A network replay attack occurs when an attacker captures sensitive user data and resends it to the receiver with the intent of gaining unauthorized access or tricking the receiver into unauthorized operations.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 17,
+    "question": "What are the characteristic features of a session ID? (Select all that apply)",
+    "options": [
+      "Enables the server to identify the session and retrieve the corresponding session data",
+      "A unique identifier assigned by the website to a specific user",
+      "Contains user's authentication credentials, e.g., username and password",
+      "A piece of data that can be stored in a cookie, or embedded as a URL parameter",
+      "Stored on the client side (in the user's browser) and sent to the server with each request",
+      "A unique identifier assigned to a server"
+    ],
+    "correct": [ 0, 1, 3, 4 ],
+    "explanation": ""
+  },
+  {
+    "id": 18,
+    "question": "In a session replay attack, an attacker intercepts and steals a valid session ID of a user and resends it to the server with the intent of gaining unauthorized access to the user's session or tricking the server into unauthorized operations on behalf of the legitimate user.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 19,
+    "question": "A technique that allows an attacker to authenticate to a remote server without extracting cleartext password from a digest is called:",
+    "options": [
+      "Pass the hash",
+      "Replay attack",
+      "Brute-force attack",
+      "Spraying attack"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 20,
+    "question": "What type of action allows an attacker to exploit the XSS vulnerability?",
+    "options": [
+      "Code injection",
+      "Privilege escalation",
+      "Session hijacking",
+      "Packet sniffing"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 21,
+    "question": "Which of the following exploits targets a protocol used for managing and accessing networked resources?",
+    "options": [
+      "CSRF/XSRF attack",
+      "XML injection attack",
+      "LDAP injection attack",
+      "SQL injection attack"
+    ],
+    "correct": 2,
+    "explanation": "LDAP injection is a type of attack where the attacker manipulates LDAP (Lightweight Directory Access Protocol) queries by injecting malicious input into an application’s query string."
+  },
+  {
+    "id": 22,
+    "question": "Which type of exploit targets web applications that generate content used to store and transport data?",
+    "options": [
+      "SQL injection attack",
+      "CSRF/XSRF attack",
+      "XML injection attack",
+      "LDAP injection attack"
+    ],
+    "correct": 2,
+    "explanation": ""
+  },
+  {
+    "id": 23,
+    "question": "Which of the following facilitate(s) privilege escalation attacks? (Select all that apply)",
+    "options": [
+      "System/application vulnerabilities",
+      "Password hashing",
+      "System/application misconfigurations",
+      "Network segmentation",
+      "Social engineering techniques"
+    ],
+    "correct": [ 0, 2, 4 ],
+    "explanation": ""
+  },
+  {
+    "id": 24,
+    "question": "Which of the statements listed below apply to the CSRF/XSRF attack? (Select 3 answers)",
+    "options": [
+      "Exploits the trust a website has in the user's web browser",
+      "A user is tricked by an attacker into submitting unauthorized web requests",
+      "Website executes attacker's requests",
+      "Exploits the trust a user's web browser has in a website",
+      "A malicious script is injected into a trusted website",
+      "User's browser executes attacker's script"
+    ],
+    "correct": [ 0, 1, 2 ],
+    "explanation": ""
+  },
+  {
+    "id": 25,
+    "question": "A dot-dot-slash attack is also referred to as:",
+    "options": [
+      "Disassociation attack",
+      "On-path attack",
+      "Directory traversal attack",
+      "Downgrade attack"
+    ],
+    "correct": 2,
+    "explanation": ""
+  }
+  ]}
