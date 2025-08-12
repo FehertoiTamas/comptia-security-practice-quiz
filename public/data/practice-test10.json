@@ -1,0 +1,305 @@
+{
+  "title": "Practice Test 10",
+  "description": "This is a practice test 10 for the CompTIA Security+ certification.",
+  "questions": [
+  {
+    "id": 1,
+    "question": "Which of the following URLs is a potential indicator of a directory traversal attack?",
+    "options": [
+      "http://www.example.com/var/../etc/passwd",
+      "http://www.example.com/var/www/../../etc/passwd",
+      "http://www.example.com/var/www/files/../../../etc/passwd",
+      "http://www.example.com/var/www/files/images/../../../../etc/passwd",
+      "Any of the above"
+    ],
+    "correct": 4,
+    "explanation": ""
+  },
+  {
+    "id": 2,
+    "question": "A type of cryptographic attack that forces a network protocol to revert to its older, less secure version is known as:",
+    "options": [
+      "Downgrade attack",
+      "Replay attack",
+      "Deauthentication attack",
+      "Spraying attack"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 3,
+    "question": "A hash collision occurs when cryptographic hash function produces two different digests for the same data input.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": ""
+  },
+  {
+    "id": 4,
+    "question": "Which cryptographic attack relies on the concepts of probability theory?",
+    "options": [
+      "Brute-force",
+      "KPA",
+      "Dictionary",
+      "Birthday"
+    ],
+    "correct": 3,
+    "explanation": ""
+  },
+  {
+    "id": 5,
+    "question": "A short list of commonly used passwords tried against large number of user accounts is a characteristic feature of:",
+    "options": [
+      "Replay attack",
+      "Dictionary attack",
+      "Spraying attack",
+      "Birthday attack"
+    ],
+    "correct": 2,
+    "explanation": ""
+  },
+  {
+    "id": 6,
+    "question": "Which password attack bypasses account-lockout policies?",
+    "options": [
+      "Birthday attack",
+      "Replay attack",
+      "Spraying attack",
+      "Dictionary attack"
+    ],
+    "correct": 2,
+    "explanation": ""
+  },
+  {
+    "id": 7,
+    "question": "An attack against encrypted data that relies heavily on computing power to check all possible keys and passwords until the correct one is found is called:",
+    "options": [
+      "Replay attack",
+      "Brute-force attack",
+      "Dictionary attack",
+      "Birthday attack"
+    ],
+    "correct": 1,
+    "explanation": ""
+  },
+  {
+    "id": 8,
+    "question": "One of the measures for bypassing the failed logon attempt account lockout policy is to capture any relevant data that might contain the password and brute force it offline.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 9,
+    "question": "A type of forensic evidence that can be used to detect unauthorized access attempts or other malicious activities is called:",
+    "options": [
+      "CVE",
+      "IoC",
+      "AIS",
+      "OSINT"
+    ],
+    "correct": 1,
+    "explanation": "Indicator of Compromise"
+  },
+  {
+    "id": 10,
+    "question": "An account lockout might indicate which type of malicious activity?",
+    "options": [
+      "Attempt to deliver malicious content",
+      "DoS attack",
+      "Account compromise",
+      "Password brute-forcing attempt"
+    ],
+    "correct": 3,
+    "explanation": ""
+  },
+  {
+    "id": 11,
+    "question": "Which of the terms listed below most accurately describes a situation wherein a single account is being used from multiple locations/devices at the same time?",
+    "options": [
+      "Spraying attack",
+      "Concurrent session usage",
+      "Single Sign-On (SSO)",
+      "Impossible travel"
+    ],
+    "correct": 1,
+    "explanation": ""
+  },
+  {
+    "id": 12,
+    "question": "Which of the following terms refers to a malicious activity indicator in a situation where a firewall or other security measure prevents an attempt to deliver malicious payload or perform an unauthorized action?",
+    "options": [
+      "DoS attack",
+      "Resource inaccessibility",
+      "Blocked content",
+      "Excessive system resource consumption"
+    ],
+    "correct": 2,
+    "explanation": ""
+  },
+  {
+    "id": 13,
+    "question": "Which of the terms listed below most accurately describes a situation wherein an account is accessed from a location that is physically impossible for the user to be in?",
+    "options": [
+      "Login time restrictions",
+      "Impossible travel",
+      "Concurrent session usage",
+      "Out-of-cycle logging"
+    ],
+    "correct": 1,
+    "explanation": ""
+  },
+  {
+    "id": 14,
+    "question": "The term \"Out-of-cycle logging\" refers to instances where systems or applications produce logs outside their regular intervals or in abnormal volumes, potentially signaling malicious activity.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 15,
+    "question": "Which of the following would indicate an attempt to hide evidence of malicious activity?",
+    "options": [
+      "Account lockout",
+      "Resource inaccessibility",
+      "Missing logs",
+      "Concurrent session usage"
+    ],
+    "correct": 2,
+    "explanation": ""
+  },
+  {
+    "id": 16,
+    "question": "Which of the terms listed below refers to a logical grouping of computers that allow computer hosts to function as if they were attached to the same broadcast domain regardless of their physical location?",
+    "options": [
+      "VLAN",
+      "DMZ",
+      "SNMP community",
+      "VPN"
+    ],
+    "correct": 0,
+    "explanation": ""
+  },
+  {
+    "id": 17,
+    "question": "What is the name of a solution that increases the efficiency of IP address space management by allowing network administrators to divide networks into subnets of different sizes?",
+    "options": [
+      "DNAT",
+      "VLSM",
+      "MPLS",
+      "VLAN"
+    ],
+    "correct": 1,
+    "explanation": "Variable Length Subnet Mask"
+  },
+  {
+    "id": 18,
+    "question": "Which of the following provides granular control over user access to specific network segments and resources based on their assigned roles and permissions?",
+    "options": [
+      "EDR",
+      "IAM",
+      "AAA",
+      "IPS"
+    ],
+    "correct": 1,
+    "explanation": "Identity and Access Management"
+  },
+  {
+    "id": 19,
+    "question": "Which of the answers listed below refers to a solution that allows for easier management and control of network segmentation policies through software applications?",
+    "options": [
+      "VDI",
+      "SDN",
+      "VPC",
+      "EDR"
+    ],
+    "correct": 1,
+    "explanation": " Software-Defined Networking"
+  },
+  {
+    "id": 20,
+    "question": "Which of the following acronyms refers to a set of rules that specify which users or system processes are granted access to objects as well as what operations are allowed on a given object?",
+    "options": [
+      "ACL",
+      "MFA",
+      "NAC",
+      "AUP"
+    ],
+    "correct": 0,
+    "explanation": "Access Control List"
+  },
+  {
+    "id": 21,
+    "question": "A rule-based access control mechanism implemented on routers, switches, and firewalls is referred to as:",
+    "options": [
+      "MAC",
+      "AUP",
+      "DAC",
+      "ACL"
+    ],
+    "correct": 3,
+    "explanation": ""
+  },
+  {
+    "id": 22,
+    "question": "Which of the answers listed below refers to a rule-based access control mechanism associated with files and/or directories?",
+    "options": [
+      "EFS",
+      "FACL",
+      "FIM",
+      "NTFS"
+    ],
+    "correct": 1,
+    "explanation": "File Access Control List"
+  },
+  {
+    "id": 23,
+    "question": "Which of the following policies applies to any requests that fall outside the criteria defined in an ACL?",
+    "options": [
+      "Fair access policy",
+      "Implicit deny policy",
+      "Transitive trust",
+      "Context-aware authentication"
+    ],
+    "correct": 1,
+    "explanation": ""
+  },
+  {
+    "id": 24,
+    "question": "Which of the answers listed below does not refer to the concept of network isolation?",
+    "options": [
+      "VLANs",
+      "Subnetting",
+      "DLP",
+      "Firewalls",
+      "DMZs",
+      "NAC",
+      "SDN",
+      "Air gaps",
+      "Zero Trust network architecture"
+    ],
+    "correct": 2,
+    "explanation": "DLP (Data Loss Prevention) is about monitoring and preventing sensitive data from leaving the organization."
+  },
+  {
+    "id": 25,
+    "question": "Which of the following answers does not refer to the concept of system/application isolation?",
+    "options": [
+      "Virtualization",
+      "Containerization",
+      "Sandboxing",
+      "Data encryption"
+    ],
+    "correct": 3,
+    "explanation": ""
+  }
+]}
